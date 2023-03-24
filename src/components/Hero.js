@@ -5,7 +5,7 @@ const Hero = () => {
     return (
         <div className='w-full h-screen text-white'>
             <img src={after} className='top-0 left-0 w-full h-screen object-cover' />
-            <div className='bg-black/50 absolute top-0 w-full h-screen'></div>
+            <div className='bg-black/40 absolute top-0 w-full h-screen'></div>
             <div className='absolute top-0 w-full h-full flex flex-col justify-center items-center'>
                 <div className='flex flex-col items-center justify-center gap-4'>
                     <h1 className='text-white text-5xl'>Steve Shelton</h1>
