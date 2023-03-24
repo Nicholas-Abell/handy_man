@@ -19,6 +19,13 @@ const Home = () => {
                 <img src={awning1} className='row-span-2 hidden lg:block object-cover w-full h-full' />
             </div>
             <BeforeAfter />
+            <div className='grid grid-rows-6 lg:grid-rows-7 grid-cols-2 lg:grid-cols-3 gap-4 h-[80vh] p-4'>
+                <img src={deck2} className='row-span-3 lg:row-span-2 object-cover w-full h-full' />
+                <img src={bench} className='row-span-4 object-cover w-full h-full' />
+                <img src={pathWay1} className='row-span-5 lg:row-span-6 object-cover w-full h-full' />
+                <img src={patio} className='row-span-4 object-cover w-full h-full' />
+                <img src={awning1} className='row-span-2 hidden lg:block object-cover w-full h-full' />
+            </div>
         </>
     )
 }
