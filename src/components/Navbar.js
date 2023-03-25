@@ -14,7 +14,7 @@ const Navbar = () => {
         <>
             <div className='fixed w-full flex justify-between items-center p-4 z-[999] bg-gradient-to-b from-black to-black/20 text-white md:hidden'>
                 <div className='flex items-center justify-center gap-4'>
-                    <BsTelephone size={25} href="tel:8125555555" className='cursor-pointer hover:text-green-400' />
+                    <a href="tel:8125555555"><BsTelephone size={25} className='cursor-pointer hover:text-green-400' /></a>
                     <h1>SMS</h1>
                 </div>
                 <HiMenuAlt3 onClick={() => setNav(!nav)} size={25} className='z-50 cursor-pointer' />
@@ -37,7 +37,7 @@ const Navbar = () => {
                 </ul>
                 {!showNumber
                     ? <BsTelephone size={25} onClick={() => setShowNumber(true)} className='cursor-pointer hover:text-green-400' />
-                    : <h2 href="tel:8125555555" onClick={handleCopyClick} className='whitespace-nowrap cursor-pointer hover:text-green-400'>812-555-5555</h2>
+                    : <h2 onClick={handleCopyClick} className='whitespace-nowrap cursor-pointer hover:text-green-400'>812-555-5555</h2>
                 }
             </div>
         </>
