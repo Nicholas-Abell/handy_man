@@ -8,7 +8,7 @@ import awning1 from '../assets/images/awning.jpg';
 import pathWay1 from '../assets/images/pathway_1.jpg';
 import bench from '../assets/images/bench.jpg';
 import patio from '../assets/images/patio.jpg';
-import BeforeAfter from '../components/BeforeAfter';
+import Footer from '../components/Footer';
 
 const Home = () => {
     const [isInView1, setIsInView1] = useState(false);
@@ -37,31 +37,31 @@ const Home = () => {
     return (
         <>
             <Hero />
-            <div className='w-full border-black border-t-4 border-b-4 bg-[#DDD0C8] py-8 px-4 flex items-center justify-center gap-4 overflow-x-scroll'>
+            <div className='w-full border-black border-t-4 border-b-4 bg-[#DDD0C8] py-8 px-4 flex items-center justify-center gap-4'>
                 <Card title={'PATIO'} img={patio} />
                 <Card title={'AWNINGS'} img={awning1} />
                 <Card title={'DECKS'} img={deck2} />
                 <Card title={'CABINENTS'} img={cabinet} />
             </div>
-            <div className='w-full flex bg-slate-300'>
+            <div className='w-full flex bg-[#BFBFBF]'>
                 <div className='flex justify-center items-center w-[50%]'>
                     <h1 ref={ref1} className={`${isInView1 ? "slide-in-bottom" : "invisible"
-                        } transition-all duration-1000 ease-out opacity-0 translate-x-[-80px]`}>Interior</h1>
+                        } transition-all duration-1000 ease-out opacity-0 translate-x-[-80px]`}>Exterior</h1>
                 </div>
                 <div className='flex flex-col justify-center items-center w-[50%]'>
                     <img src={deck2} className='h-full object-cover' />
                 </div>
             </div>
-            <div className='w-full flex bg-slate-300'>
+            <div className='w-full flex bg-[#BFBFBF]'>
                 <div className='flex flex-col justify-center items-center w-[50%]'>
                     <img src={deck2} className='h-full object-cover' />
                 </div>
                 <div className='flex justify-center items-center w-[50%]'>
                     <h1 ref={ref2} className={`${isInView2 ? "slide-in-bottom" : "invisible"
-                        } transition-all duration-1000 ease-out opacity-0 translate-x-[80px]`}>Exterior</h1>
+                        } transition-all duration-1000 ease-out opacity-0 translate-x-[80px]`}>Interior</h1>
                 </div>
             </div>
-            <BeforeAfter />
+            <Footer />
         </>
     )
 }
