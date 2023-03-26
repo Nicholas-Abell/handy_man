@@ -34,10 +34,12 @@ const Home = () => {
         observer2.observe(ref2.current);
     }, []);
 
+    //[#DDD0C8]
+
     return (
         <>
             <Hero />
-            <div className='w-full border-black border-t-4 border-b-4 bg-[#DDD0C8] py-8 px-4 flex items-center justify-center gap-4'>
+            <div className='w-full border-black border-t-4 border-b-4 bg-black py-8 px-[20px] lg:px-4 flex items-center lg:justify-center gap-4 overflow-x-scroll'>
                 <Card title={'PATIO'} img={patio} />
                 <Card title={'AWNINGS'} img={awning1} />
                 <Card title={'DECKS'} img={deck2} />

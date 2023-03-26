@@ -2,7 +2,7 @@ import React from 'react'
 
 const Card = ({ img, title }) => {
     return (
-        <div className='bg-[#BFBFBF] border-black border-4 rounded-lg h-[250px] w-[250px] cursor-pointer hover:shadow-lg'>
+        <div className='bg-[#BFBFBF] border-black border-4 rounded-lg min-w-[250px] h-[250px] w-[250px] cursor-pointer hover:shadow-lg scrollbar-hide'>
             <div className=' rounded w-full h-[70%]'
                 style={{
                     backgroundImage: `url(${img})`,

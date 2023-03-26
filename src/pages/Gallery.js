@@ -12,11 +12,11 @@ const Gallery = () => {
   return (
     <>
       <div className='grid grid-rows-6 lg:grid-rows-12 grid-cols-2 lg:grid-cols-3 gap-4 h-[80vh] p-4'>
-        <img src={deck2} className='row-span-3 lg:row-span-4 object-cover w-full h-full' />
-        <img src={bench} className='row-span-4 object-cover w-full h-full' />
+        <img src={deck2} className='row-span-5 col-span-3 object-cover w-full h-full' />
+        {/* <img src={bench} className='row-span-4 object-cover w-full h-full' />
         <img src={pathWay1} className='row-span-5 lg:row-span-6 object-cover w-full h-full' />
         <img src={patio} className='row-span-6 object-cover w-full h-full' />
-        <img src={awning1} className='row-span-5 hidden lg:block object-cover w-full h-full' />
+        <img src={awning1} className='row-span-5 hidden lg:block object-cover w-full h-full' /> */}
       </div>
     </>
   )
