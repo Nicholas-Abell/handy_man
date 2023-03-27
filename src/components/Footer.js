@@ -11,9 +11,9 @@ const Footer = () => {
                 <a className='flex items-center justify-center gap-4 hover:text-white cursor-pointer'><FiMail size={25} /><h1> Email Us</h1></a>
             </div>
             <div className='flex items-center justify-center gap-8'>
-                <h1>About Us</h1>
-                <h1>Our Services</h1>
-                <h1>Gallery</h1>
+                <a href='/about' className='hover:text-white'><h1>About Us</h1></a>
+                <a href='/services' className='hover:text-white'><h1>Our Services</h1></a>
+                <a href='/gallery' className='hover:text-white'><h1>Gallery</h1></a>
             </div>
 
         </div>

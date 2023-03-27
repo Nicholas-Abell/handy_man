@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import after from '../assets/images/after.jpg';
 import before from '../assets/images/before_greyscale.jpeg';
-import grayWood from '../assets/images/background_wood_dark.jpg';
 
 const Hero = () => {
     const [fadeOut, setFadeOut] = useState(false);
@@ -11,13 +10,9 @@ const Hero = () => {
     }, []);
 
     return (
-        <div className='w-full h-screen relative text-white'
+        <div className='w-full h-screen relative text-white lg:bg-fixed bg-center bg-no-repeat bg-cover'
             style={{
                 backgroundImage: `url(${after})`,
-                backgroundAttachment: 'fixed',
-                backgroundPosition: 'center',
-                backgroundRepeat: 'no-repeat',
-                backgroundSize: 'cover',
             }}>
             <img src={before} className='top-0 left-0 w-full h-screen object-cover absolute z-10 ease-in opacity-100 duration-[3s]' style={fadeOut ? { opacity: '0', transitionDelay: '1s' } : { opacity: '100' }} />
             <div className='bg-black/10 absolute top-0 w-full h-screen'></div>

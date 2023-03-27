@@ -1,15 +1,12 @@
 import React, { useRef, useState, useEffect } from 'react';
 import Hero from '../components/Hero';
-import Card from '../components/Card';
-
 //images
-import deck2 from '../assets/images/deck_1.jpg';
-import cabinet from '../assets/images/shelving_1.jpg';
-import awning1 from '../assets/images/awning.jpg';
-import patio from '../assets/images/patio.jpg';
 import Footer from '../components/Footer';
-import parallax from '../assets/images/parallax.jpg';
 import AboutUs from '../components/AboutUs';
+import CardHolder from '../components/CardHolder';
+import deck2 from '../assets/images/deck_1.jpg';
+//icona
+import { TfiRulerPencil } from 'react-icons/tfi';
 
 const Home = () => {
     const [isInView1, setIsInView1] = useState(false);
@@ -39,18 +36,44 @@ const Home = () => {
         <>
             <Hero />
             <AboutUs />
-            <div className='w-full relative border-black border-t-4 border-b-4 bg-black py-8 px-[20px] lg:px-4 flex flex-wrap items-center justify-center gap-4'
-                style={{
-                    backgroundImage: `url(${parallax})`,
-                    backgroundAttachment: 'fixed',
-                    backgroundPosition: 'center',
-                    backgroundRepeat: 'no-repeat',
-                    backgroundSize: 'cover'
-                }}>
-                <Card title={'PATIO'} img={patio} />
-                <Card title={'AWNINGS'} img={awning1} />
-                <Card title={'DECKS'} img={deck2} />
-                <Card title={'CABINENTS'} img={cabinet} />
+            <CardHolder />
+            <div className='bg-white w-full flex flex-col justify-center items-center py-24 gap-32'>
+                <div className='text-center'>
+                    <h1 className='font-bold text-3xl p-4'>Any Project for Your Home</h1>
+                    <p className='text-gray-500'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam est ipsa</p>
+                </div>
+                <div className='flex flex-col md:flex-row justify-between items-center gap-24 w-full md:w-[50%]'>
+                    <div className=' flex flex-wrap justify-center items-center gap-4'>
+                        <TfiRulerPencil size={50} />
+                        <div>
+                            <h2 className='font-bold'>Custom Designs</h2>
+                            <p>For your home, lawn, or garden</p>
+                        </div>
+                    </div>
+                    <div className=' flex flex-wrap justify-center items-center gap-4'>
+                        <TfiRulerPencil size={50} />
+                        <div>
+                            <h2 className='font-bold'>Custom Designs</h2>
+                            <p>For your home, lawn, or garden</p>
+                        </div>
+                    </div>
+                </div>
+                <div className='flex flex-col md:flex-row justify-between items-center gap-24 w-full md:w-[50%]'>
+                    <div className=' flex flex-wrap justify-center items-center gap-4'>
+                        <TfiRulerPencil size={50} />
+                        <div>
+                            <h2 className='font-bold'>Custom Designs</h2>
+                            <p>For your home, lawn, or garden</p>
+                        </div>
+                    </div>
+                    <div className=' flex flex-wrap justify-center items-center gap-4'>
+                        <TfiRulerPencil size={50} />
+                        <div>
+                            <h2 className='font-bold'>Custom Designs</h2>
+                            <p>For your home, lawn, or garden</p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div className='w-full flex' >
                 <div className='flex justify-center items-center w-[50%]'>
