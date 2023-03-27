@@ -2,13 +2,14 @@ import React, { useRef, useState, useEffect } from 'react';
 import Hero from '../components/Hero';
 import Card from '../components/Card';
 
+//images
 import deck2 from '../assets/images/deck_1.jpg';
 import cabinet from '../assets/images/shelving_1.jpg';
 import awning1 from '../assets/images/awning.jpg';
-import pathWay1 from '../assets/images/pathway_1.jpg';
-import bench from '../assets/images/bench.jpg';
 import patio from '../assets/images/patio.jpg';
 import Footer from '../components/Footer';
+import parallax from '../assets/images/parallax.jpg';
+import AboutUs from '../components/AboutUs';
 
 const Home = () => {
     const [isInView1, setIsInView1] = useState(false);
@@ -34,18 +35,24 @@ const Home = () => {
         observer2.observe(ref2.current);
     }, []);
 
-    //[#DDD0C8]
-
     return (
         <>
             <Hero />
-            <div className='w-full border-black border-t-4 border-b-4 bg-black py-8 px-[20px] lg:px-4 flex items-center lg:justify-center gap-4 overflow-x-scroll'>
+            <AboutUs />
+            <div className='w-full relative border-black border-t-4 border-b-4 bg-black py-8 px-[20px] lg:px-4 flex flex-wrap items-center justify-center gap-4'
+                style={{
+                    backgroundImage: `url(${parallax})`,
+                    backgroundAttachment: 'fixed',
+                    backgroundPosition: 'center',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundSize: 'cover'
+                }}>
                 <Card title={'PATIO'} img={patio} />
                 <Card title={'AWNINGS'} img={awning1} />
                 <Card title={'DECKS'} img={deck2} />
                 <Card title={'CABINENTS'} img={cabinet} />
             </div>
-            <div className='w-full flex bg-[#BFBFBF]'>
+            <div className='w-full flex' >
                 <div className='flex justify-center items-center w-[50%]'>
                     <h1 ref={ref1} className={`${isInView1 ? "slide-in-bottom" : "invisible"
                         } transition-all duration-1000 ease-out opacity-0 translate-x-[-80px]`}>Exterior</h1>
