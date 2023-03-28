@@ -8,7 +8,7 @@ import deck2 from '../assets/images/deck_1.jpg';
 
 const CardHolder = () => {
     return (
-        <div className='w-full relative border-black border-t-4 border-b-4 bg-black py-8 px-[20px] lg:px-4 flex flex-wrap items-center justify-center gap-4 lg:bg-fixed bg-center bg-no-repeat bg-cover'
+        <div className='w-full relative border-black border-t-4 border-b-4 bg-black py-8 px-[20px] lg:px-4 flex flex-wrap items-center justify-center gap-4 lg:gap-12 lg:bg-fixed bg-center bg-no-repeat bg-cover'
             style={{
                 backgroundImage: `url(${parallax})`,
             }}>

@@ -37,21 +37,21 @@ const Home = () => {
             <AboutUs />
             <CardHolder />
             <IconBanner />
-            <div className='w-full flex' >
+            <div className='w-full flex bg-red-800'>
                 <div className='flex justify-center items-center w-[50%]'>
-                    <h1 ref={ref1} className={`${isInView1 ? "slide-in-bottom" : "invisible"
+                    <h1 ref={ref1} className={`text-white ${isInView1 ? "slide-in-bottom" : "invisible"
                         } transition-all duration-1000 ease-out opacity-0 translate-x-[-80px]`}>Exterior</h1>
                 </div>
                 <div className='flex flex-col justify-center items-center w-[50%]'>
                     <img src={deck2} className='h-full object-cover' />
                 </div>
             </div>
-            <div className='w-full flex bg-[#BFBFBF]'>
+            <div className='w-full flex bg-red-800'>
                 <div className='flex flex-col justify-center items-center w-[50%]'>
                     <img src={deck2} className='h-full object-cover' />
                 </div>
                 <div className='flex justify-center items-center w-[50%]'>
-                    <h1 ref={ref2} className={`${isInView2 ? "slide-in-bottom" : "invisible"
+                    <h1 ref={ref2} className={`text-white ${isInView2 ? "slide-in-bottom" : "invisible"
                         } transition-all duration-1000 ease-out opacity-0 translate-x-[80px]`}>Interior</h1>
                 </div>
             </div>

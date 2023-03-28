@@ -11,10 +11,6 @@
   scrollbar-width: none;
 }
 
-body {
-  background-color: gray;
-}
-
 @layer base {
   button {
     @apply border py-2 px-3 rounded-full
