@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { HiMenuAlt3 } from 'react-icons/hi';
-import { BsTelephone } from 'react-icons/bs'
+import { BsTelephone } from 'react-icons/bs';
+
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);

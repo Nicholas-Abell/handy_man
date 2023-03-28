@@ -20,7 +20,7 @@ const Hero = () => {
                 <div className='flex flex-col items-center justify-center gap-8 bg-red-900/70 p-12 rounded-full min-w-[500px] md:min-w-[600px]'>
                     <h1 className='text-white text-3xl lg:text-7xl'>Transform Your Home</h1>
                     <p className='text-white text-xl lg:text-3xl'>Handyman</p>
-                    <button className='bg-slate-200/30 text-black hover:bg-white ease-in duration-300'>Call for Estimates</button>
+                    <button className='bg-white/30 text-black hover:bg-white hover:text-red-800 ease-in duration-300'>Call for Estimates</button>
                 </div>
             </div>
         </div>

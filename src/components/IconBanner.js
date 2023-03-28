@@ -25,8 +25,8 @@ const IconBanner = () => {
                     <div className='w-full flex flex-wrap pl-[25%] md:p-0 md:justify-center items-center gap-4'>
                         <FaPeopleCarry size={50} className='text-red-800' />
                         <div>
-                            <h2 className='font-bold text-2xl'>Custom Designs</h2>
-                            <p>For your home, lawn, or garden</p>
+                            <h2 className='font-bold text-2xl'>No Job Too Small</h2>
+                            <p>Job not listed? Just ask</p>
                         </div>
                     </div>
                 </div>

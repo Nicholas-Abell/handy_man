@@ -55,7 +55,6 @@ const Home = () => {
                         } transition-all duration-1000 ease-out opacity-0 translate-x-[80px]`}>Interior</h1>
                 </div>
             </div>
-            <Footer />
         </>
     )
 }
