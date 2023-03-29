@@ -34,7 +34,7 @@
     @apply font-roboto;
   }
 
-  p, button {
+  body {
     @apply font-inter
   }
 

@@ -43,9 +43,8 @@ const Services = () => {
               <li>Doors</li>
             </ul>
             <ul>
-              <li>Doors</li>
+              <li>Windows</li>
               <li>Locks</li>
-              <li>Decks</li>
               <li>Tables</li>
             </ul>
           </div>
