@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
+
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
@@ -21,8 +30,18 @@ body {
   }
 
   h1 {
-    @apply font-bold text-xl md:text-2xl lg:text-3xl
+    @apply font-bold text-xl md:text-2xl lg:text-3xl font-roboto
   }
+
+  h2,
+  h3 {
+    @apply font-roboto;
+  }
+
+  p, button {
+    @apply font-inter
+  }
+
 }
 
 .slide-in-bottom {

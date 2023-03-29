@@ -26,7 +26,7 @@ const IconBanner = () => {
                         <FaPeopleCarry size={50} className='text-red-800' />
                         <div>
                             <h2 className='font-bold text-2xl'>No Job Too Small</h2>
-                            <p>Job not listed? Just ask</p>
+                            <p>The Job Need not listed? Just ask</p>
                         </div>
                     </div>
                 </div>
