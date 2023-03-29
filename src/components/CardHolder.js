@@ -12,7 +12,7 @@ const CardHolder = () => {
             style={{
                 backgroundImage: `url(${parallax})`,
             }}>
-            <Card title={'PATIO'} img={patio} />
+            <Card title={'PATIOS'} img={patio} />
             <Card title={'AWNINGS'} img={awning1} />
             <Card title={'DECKS'} img={deck2} />
             <Card title={'CABINENTS'} img={cabinet} />

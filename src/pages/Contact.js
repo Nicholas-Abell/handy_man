@@ -6,7 +6,18 @@ const Contact = () => {
             <div className='w-full h-[40vh] flex justify-center items-center text-white'>
                 <h1 className='text-5xl lg:text-8xl'>Contact Us</h1>
             </div>
-            <div className="px-4 pb-24 max-w-[800px] mx-auto min-h-[500px]">
+            <div className='text-center flex gap-12 justify-center items-center py-24 px-4 md:px-48 text-black bg-white'>
+                <div>
+                    <h1 className='text-4xl text-red-800 font-bold whitespace-nowrap mb-4'>Call or Text</h1>
+                    <p className='text-2xl'>812-555-555X</p>
+                </div>
+                <div className='w-1 h-[240px] bg-red-800'></div>
+                <div>
+                    <h1 className='text-4xl text-red-800 font-bold whitespace-nowrap mb-4'>Email</h1>
+                    <p className='text-2xl'> Down Below or <br />at SMS@gmail.com</p>
+                </div>
+            </div>
+            <div className="px-4 py-24 max-w-[800px] mx-auto min-h-[500px]">
                 <form action="https://formsubmit.co/your@email.com" method="POST">
                     <div className="mb-4">
                         <label htmlFor="name" className="block mb-2 font-bold text-white">

@@ -9,7 +9,7 @@ const Services = () => {
       <div className='w-full h-[40vh] flex justify-center items-center text-white'>
         <h1 className='text-5xl lg:text-8xl'>Our Services</h1>
       </div>
-      <div className='bg-red-800 w-full py-8 flex justify-center items-center gap-8 flex-wrap'>
+      <div className='bg-red-800 w-full pb-24 flex justify-center items-center gap-8 flex-wrap'>
         <div className='bg-white w-[350px] h-[350px] rounde-lg flex flex-col items-center justify-center p-4 rounded-lg gap-4'>
           <div className='flex flex-col items-center justify-center'>
             <GiWoodBeam size={80} className='text-white bg-red-800 rounded-full p-2 border-black border-4' />
@@ -62,12 +62,6 @@ const Services = () => {
               <li>Pressure Washing</li>
               <li>Mowing</li>
             </ul>
-            {/* <ul>
-              <li>Shelves</li>
-              <li>Cabinents</li>
-              <li>Decks</li>
-              <li>Tables</li>
-            </ul> */}
           </div>
         </div>
         <div className='bg-white w-[350px] h-[350px] rounde-lg flex flex-col items-center justify-center rounded-lg gap-4'>
@@ -80,14 +74,8 @@ const Services = () => {
               <li>Light Bulb Replacement</li>
               <li>Basic HVAC Maintenance </li>
               <li>T.V. Mounting</li>
-              <li>Smat Home Installations</li>
+              <li>Smart Home Installations</li>
             </ul>
-            {/* <ul>
-              <li>Shelves</li>
-              <li>Cabinents</li>
-              <li>Decks</li>
-              <li>Tables</li>
-            </ul> */}
           </div>
         </div>
       </div>
