@@ -9,18 +9,18 @@ const Gallery = () => {
         <h1 className='text-5xl lg:text-8xl'>Gallery</h1>
       </div>
       <div className='w-full grid grid-cols-2 lg:grid-cols-3 gap-4 p-4'>
-        <img src={after} className='w-full h-auto object-cover rounded-lg border-4 border-black' />
-        <img src={bench} className='w-full h-auto object-cover rounded-lg border-4 border-black' />
-        <img src={pathWay1} className='w-full h-auto object-cover rounded-lg border-4 border-black' />
-        <img src={patio} className='w-full h-auto object-cover rounded-lg border-4 border-black' />
-        <img src={shelving} className='w-full h-auto object-cover rounded-lg border-4 border-black' />
-        <img src={railing} className='w-full h-auto object-cover rounded-lg border-4 border-black' />
-        <img src={cabinet} className='w-full h-auto object-cover rounded-lg border-4 border-black' />
-        <img src={machinery} className='w-full h-auto object-cover rounded-lg border-4 border-black' />
-        <img src={pipe} className='w-full h-auto object-cover rounded-lg border-4 border-black' />
-        <img src={awning2} className='w-full h-auto object-cover rounded-lg border-4 border-black' />
-        <img src={deck2} className='w-full h-auto object-cover rounded-lg row-span-1 col-span-1 border-4 border-black' />
-        <img src={awning1} className='w-full h-auto object-cover rounded-lg row-span-1 col-span-1 border-4 border-black' />
+        <img src={after} alt='interior' className='w-full h-auto object-cover rounded-lg border-4 border-black' />
+        <img src={bench} alt='bench' className='w-full h-auto object-cover rounded-lg border-4 border-black' />
+        <img src={pathWay1} alt='pathway1' className='w-full h-auto object-cover rounded-lg border-4 border-black' />
+        <img src={patio} alt='patio' className='w-full h-auto object-cover rounded-lg border-4 border-black' />
+        <img src={shelving} alt='shelving' className='w-full h-auto object-cover rounded-lg border-4 border-black' />
+        <img src={railing} alt='railing' className='w-full h-auto object-cover rounded-lg border-4 border-black' />
+        <img src={cabinet} alt='cabinent' className='w-full h-auto object-cover rounded-lg border-4 border-black' />
+        <img src={machinery} alt='machinery' className='w-full h-auto object-cover rounded-lg border-4 border-black' />
+        <img src={pipe} alt='pipe' className='w-full h-auto object-cover rounded-lg border-4 border-black' />
+        <img src={awning2} alt='awning2' className='w-full h-auto object-cover rounded-lg border-4 border-black' />
+        <img src={deck2} alt='deck2' className='w-full h-auto object-cover rounded-lg row-span-1 col-span-1 border-4 border-black' />
+        <img src={awning1} alt='awning1' className='w-full h-auto object-cover rounded-lg row-span-1 col-span-1 border-4 border-black' />
       </div>
     </>
   );
