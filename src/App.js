@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <BrowserRouter basename={process.env.PUBLIC_URL + "/handy_man"}>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/gallery' element={<Gallery />} />
