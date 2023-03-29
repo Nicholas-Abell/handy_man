@@ -31,26 +31,25 @@ const Home = () => {
     }, []);
 
     return (
-        <>
+        <main className='overflow-hidden'>
             <Hero />
             <AboutUs />
             <CardHolder />
             <IconBanner />
             <div className='w-full flex bg-red-800'>
-                <div className='flex justify-center items-center w-[50%]'>
+                <div className='flex justify-center items-center w-full'>
                     <h1 ref={ref1} className={`text-white text-4xl md:text-6xl ${isInView1 ? "slide-in-bottom" : "invisible"
                         } transition-all duration-1000 ease-out opacity-0 translate-x-[-80px]`}>Exterior</h1>
                 </div>
-                <div className='flex flex-col justify-center items-center w-[50%]'>
-                    <div className=''></div>
+                <div className='flex flex-col justify-center items-center w-full'>
                     <img src={pipe} className='h-full object-cover' />
                 </div>
             </div>
             <div className='w-full flex bg-red-800'>
-                <div className='flex flex-col justify-center items-center w-[50%]'>
+                <div className='flex flex-col justify-center items-center w-full'>
                     <img src={after} className='h-full object-fit' />
                 </div>
-                <div className='flex justify-center items-center w-[50%]'>
+                <div className='flex justify-center items-center w-full'>
                     <h1 ref={ref2} className={`text-white text-4xl md:text-6xl ${isInView2 ? "slide-in-bottom" : "invisible"
                         } transition-all duration-1000 ease-out opacity-0 translate-x-[80px]`}>Interior</h1>
                 </div>
@@ -59,7 +58,7 @@ const Home = () => {
                 <h1 className='text-4xl text-red-800 font-bold'>Contact Us Today</h1>
                 <p className='text-2xl'>For a free estimate.</p>
             </div>
-        </>
+        </main>
     )
 }
 

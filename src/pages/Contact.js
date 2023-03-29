@@ -6,13 +6,13 @@ const Contact = () => {
             <div className='w-full h-[40vh] flex justify-center items-center text-white'>
                 <h1 className='text-5xl lg:text-8xl'>Contact Us</h1>
             </div>
-            <div className='text-center flex gap-12 justify-center items-center py-24 px-4 md:px-48 text-black bg-white'>
-                <div>
+            <div className='text-center w-full flex flex-col md:flex-row justify-between items-center py-24 px-4 md:px-48 text-black bg-white'>
+                <div className='text-center mb-12 md:m-0'>
                     <h1 className='text-4xl text-red-800 font-bold whitespace-nowrap mb-4'>Call or Text</h1>
                     <p className='text-2xl'>812-555-555X</p>
                 </div>
-                <div className='w-1 h-[240px] bg-red-800'></div>
-                <div>
+                <div className='w-[5px] h-[240px] mx-8 bg-red-800 hidden md:block'></div>
+                <div className='text-center'>
                     <h1 className='text-4xl text-red-800 font-bold whitespace-nowrap mb-4'>Email</h1>
                     <p className='text-2xl'> Down Below or <br />at SMS@gmail.com</p>
                 </div>
