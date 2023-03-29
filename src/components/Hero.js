@@ -19,7 +19,8 @@ const Hero = () => {
             <div className='absolute top-0 w-full h-full flex flex-col justify-center items-center z-20'>
                 <div className='flex flex-col items-center justify-center gap-8 bg-red-900/70 p-4 sm:p-8 md:p-12 rounded-3xl min-w-[250px] md:min-w-[500px] lg::min-w-[600px]'>
                     <h1 className='text-white text-lg sm:text-2xl md:text-3xl lg:text-7xl'>Transform Your Home</h1>
-                    <button className='bg-white/30 text-black hover:bg-white hover:text-red-800 ease-in duration-300'>Contact us Today</button>
+                    <h1 className='text-white text-lg sm:text-xl md:text-2xl lg:text-5xl'>With SMS</h1>
+                    <button className='text-black bg-white hover:text-red-800 hover:bg-gray-300 ease-in duration-300'>Contact us Today</button>
                 </div>
             </div>
         </div>

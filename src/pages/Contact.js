@@ -15,7 +15,7 @@ const Contact = () => {
                 <div className='text-center flex flex-col items-center justify-center gap-4 mb-12 md:m-0'>
                     <HiDevicePhoneMobile size={60} className='bg-red-800 rounded-full text-white p-1' />
                     <h1 className='text-4xl text-red-800 font-bold whitespace-nowrap mb-4'>Call or Text</h1>
-                    <p className='text-2xl'>812-555-555X</p>
+                    <p className='text-2xl'>812-525-1307</p>
                 </div>
                 <div className='w-[5px] h-[240px] mx-8 bg-red-800 hidden md:block'></div>
                 <div className='text-center flex flex-col items-center justify-center gap-4'>
