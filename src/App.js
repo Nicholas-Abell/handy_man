@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <BrowserRouter basename={'/handy_man'}>
+      <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/gallery' element={<Gallery />} />
