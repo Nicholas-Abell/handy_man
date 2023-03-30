@@ -54,12 +54,18 @@ const Services = () => {
             <GiGreenhouse size={80} className='text-white bg-red-800 rounded-full p-2 border-black border-4' />
             <h1 className='text-3xl font-bold'>Exterior</h1>
           </div>
-          <div className='w-full flex items-center justify-center gap-24 text-lg whitespace-nowrap'>
+          <div className='w-full flex items-center justify-center gap-12 text-lg whitespace-nowrap'>
             <ul>
               <li>Gutter Cleaning</li>
               <li>Weed Removal</li>
               <li>Pressure Washing</li>
               <li>Mowing</li>
+            </ul>
+            <ul>
+              <li>Landscaping</li>
+              <li>Tree Removal</li>
+              {/* <li>Pressure Washing</li>
+              <li>Mowing</li> */}
             </ul>
           </div>
         </div>
