@@ -13,13 +13,13 @@ const Contact = () => {
             </div>
             <div className='text-center w-full flex flex-col md:flex-row justify-between items-center py-24 px-4 md:px-48 text-black bg-white'>
                 <div className='text-center flex flex-col items-center justify-center gap-4 mb-12 md:m-0'>
-                    <HiDevicePhoneMobile size={60} className='bg-red-800 rounded-full text-white p-1' />
+                    <HiDevicePhoneMobile size={60} className='bg-red-800 rounded-full text-white p-1 border-4 border-black' />
                     <h1 className='text-4xl text-red-800 font-bold whitespace-nowrap mb-4'>Call or Text</h1>
                     <p className='text-2xl'>812-525-1307</p>
                 </div>
                 <div className='w-[5px] h-[240px] mx-8 bg-red-800 hidden md:block'></div>
                 <div className='text-center flex flex-col items-center justify-center gap-4'>
-                    <BsMailbox size={60} className='bg-red-800 rounded-full text-white p-1' />
+                    <BsMailbox size={60} className='bg-red-800 rounded-full text-white p-1 border-4 border-black' />
                     <h1 className='text-4xl text-red-800 font-bold whitespace-nowrap mb-4'>Email</h1>
                     <p className='text-2xl'> Down Below or <br />at SMS@gmail.com</p>
                 </div>

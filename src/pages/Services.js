@@ -64,8 +64,7 @@ const Services = () => {
             <ul>
               <li>Landscaping</li>
               <li>Tree Removal</li>
-              {/* <li>Pressure Washing</li>
-              <li>Mowing</li> */}
+              <li>Pathways</li>
             </ul>
           </div>
         </div>
