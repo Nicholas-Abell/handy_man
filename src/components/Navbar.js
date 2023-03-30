@@ -14,7 +14,7 @@ const Navbar = () => {
     return (
         <>
             <div className='fixed w-full flex justify-between items-center p-4 z-[999] bg-gradient-to-b from-black to-black/20 text-white md:hidden'>
-                <div className='flex items-center justify-center gap-4'>
+                <div className='flex items-center justify-between w-[50%]'>
                     <a href="tel:8125251307"><BsTelephone size={25} className='cursor-pointer hover:text-green-400' /></a>
                     <div className='relative text-center rounded-full bg-red-800 p-4 w-[20px] h-[20px] border border-black'>
                         <div className='rounded-full w-[5px] h-[5px] bg-red-500 absolute left-2 top-2 z-10'></div>

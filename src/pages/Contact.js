@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 import { BsMailbox } from 'react-icons/bs';
 import { HiDevicePhoneMobile } from 'react-icons/hi2';
 
-
 const Contact = () => {
     return (
         <div className='bg-red-800 w-full'>
