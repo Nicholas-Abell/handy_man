@@ -16,10 +16,6 @@ const Navbar = () => {
             <div className='fixed w-full flex justify-between items-center p-4 z-[999] bg-gradient-to-b from-black to-black/20 text-white md:hidden'>
                 <div className='flex items-center justify-between w-[50%]'>
                     <a href="tel:8125251307"><BsTelephone size={25} className='cursor-pointer hover:text-green-400' /></a>
-                    {/* <div className='relative text-center rounded-full bg-red-800 p-4 w-[20px] h-[20px] border border-black'>
-                        <div className='rounded-full w-[5px] h-[5px] bg-red-500 absolute left-2 top-2 z-10'></div>
-                        <h1 className='absolute bottom-[-1] left-0'>SMS</h1>
-                    </div> */}
                     <h1 className=' text-sm'>SMS</h1>
                 </div>
                 <HiMenuAlt3 onClick={() => setNav(!nav)} size={25} className='z-50 cursor-pointer' />
@@ -33,9 +29,7 @@ const Navbar = () => {
                 </div>
             </div>
             <div className='fixed w-full justify-between items-center p-4 z-[999] bg-gradient-to-b from-black to-black/20 text-white hidden md:flex'>
-                <div className='relative text-center rounded-full bg-red-800 p-4 w-[20px] h-[20px] border border-black'>
-                    {/* <div className='rounded-full w-[5px] h-[5px] bg-red-500 absolute left-2 top-2 z-10'></div>
-                    <h1 className='absolute bottom-[-1] left-0'>SMS</h1> */}
+                <div>
                     <h1>SMS</h1>
                 </div>
                 <ul className='flex w-full z-10 items-center justify-center gap-12'>
