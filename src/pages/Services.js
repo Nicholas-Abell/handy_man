@@ -10,19 +10,19 @@ const Services = () => {
         <h1 className='text-5xl lg:text-8xl'>Our Services</h1>
       </div>
       <div className='bg-red-800 w-full pb-24 flex justify-center items-center gap-8 flex-wrap'>
-        <div className='bg-white w-[350px] h-[350px] rounde-lg flex flex-col items-center justify-center p-4 rounded-lg gap-4'>
+        <div className='bg-white w-[350px] h-[350px] rounded-lg flex flex-col items-center justify-center p-4 gap-4'>
           <div className='flex flex-col items-center justify-center'>
             <GiWoodBeam size={80} className='text-white bg-red-800 rounded-full p-2 border-black border-4' />
             <h1 className='text-3xl font-bold'>Carpentry</h1>
           </div>
-          <div className='w-full flex items-center justify-center gap-24 text-lg whitespace-nowrap'>
-            <ul>
+          <div className='w-full flex items-center justify-between text-lg whitespace-nowrap list-disc px-8'>
+            <ul className=' list-disc'>
               <li>Furniture</li>
               <li>Fences</li>
               <li>Decks</li>
               <li>Tables</li>
             </ul>
-            <ul>
+            <ul className=' list-disc'>
               <li>Shelves</li>
               <li>Cabinents</li>
               <li>Benches</li>
@@ -30,51 +30,49 @@ const Services = () => {
             </ul>
           </div>
         </div>
-        <div className='bg-white w-[350px] h-[350px] rounde-lg flex flex-col items-center justify-center rounded-lg gap-4'>
+        <div className='bg-white w-[350px] h-[350px] rounded-lg flex flex-col items-center justify-center gap-4'>
           <div className='flex flex-col items-center justify-center'>
             <AiOutlineFormatPainter size={80} className='text-white bg-red-800 rounded-full p-2 border-black border-4' />
             <h1 className='text-3xl font-bold'>Interior</h1>
           </div>
-          <div className='w-full flex items-center justify-center gap-24 text-lg whitespace-nowrap'>
-            <ul>
+          <div className='w-full flex items-center justify-between text-lg whitespace-nowrap list-disc px-8'>
+            <ul className=' list-disc'>
               <li>Light Painting</li>
               <li>Floors</li>
               <li>Walls</li>
               <li>Doors</li>
             </ul>
-            <ul>
+            <ul className=' list-disc'>
               <li>Windows</li>
               <li>Locks</li>
               <li>Tables</li>
             </ul>
           </div>
         </div>
-        <div className='bg-white w-[350px] h-[350px] rounde-lg flex flex-col items-center justify-center rounded-lg gap-4'>
+        <div className='bg-white w-[350px] h-[350px] rounded-lg flex flex-col items-center justify-center pt-8'>
           <div className='flex flex-col items-center justify-center'>
             <GiGreenhouse size={80} className='text-white bg-red-800 rounded-full p-2 border-black border-4' />
             <h1 className='text-3xl font-bold'>Exterior</h1>
           </div>
-          <div className='w-full flex items-center justify-center gap-12 text-lg whitespace-nowrap'>
-            <ul>
+          <div className='w-full flex items-center justify-center text-lg whitespace-nowrap list-disc px-8'>
+            <ul className=' list-disc space-y-[-5px]'>
+              <li>Landscaping</li>
               <li>Gutter Cleaning</li>
               <li>Weed Removal</li>
               <li>Pressure Washing</li>
               <li>Mowing</li>
-            </ul>
-            <ul>
-              <li>Landscaping</li>
               <li>Tree Removal</li>
               <li>Pathways</li>
             </ul>
           </div>
         </div>
-        <div className='bg-white w-[350px] h-[350px] rounde-lg flex flex-col items-center justify-center rounded-lg gap-4'>
+        <div className='bg-white w-[350px] h-[350px] rounded-lg flex flex-col items-center justify-center gap-4'>
           <div className='flex flex-col items-center justify-center'>
             <BsLightbulb size={80} className='text-white bg-red-800 rounded-full p-2 border-black border-4' />
             <h1 className='text-3xl font-bold'>Appliances</h1>
           </div>
-          <div className='w-full flex items-center justify-center gap-24 text-lg whitespace-nowrap'>
-            <ul>
+          <div className='w-full flex items-center justify-center text-lg whitespace-nowrap list-disc px-8'>
+            <ul className=' list-disc'>
               <li>Light Bulb Replacement</li>
               <li>Basic HVAC Maintenance </li>
               <li>T.V. Mounting</li>
