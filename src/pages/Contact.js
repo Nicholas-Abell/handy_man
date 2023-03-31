@@ -4,6 +4,9 @@ import React, { useState } from 'react';
 import { BsMailbox } from 'react-icons/bs';
 import { HiDevicePhoneMobile } from 'react-icons/hi2';
 
+//phone#@vtext.com verizon
+//phone#@txt.att.net at&t
+
 const Contact = () => {
     return (
         <div className='bg-red-800 w-full'>
@@ -24,13 +27,14 @@ const Contact = () => {
                 </div>
             </div>
             <div className="px-4 py-24 max-w-[800px] mx-auto min-h-[500px]">
-                <form action="https://formsubmit.co/your@email.com" method="POST">
+                <form action="https://formsubmit.co/17656315946@vtext.com" method="POST">
                     <div className="mb-4">
-                        <label htmlFor="name" className="block mb-2 font-bold text-white">
+                        <label className="block mb-2 font-bold text-white">
                             Name
                         </label>
                         <input
                             type="text"
+                            name='name'
                             id="name"
                             className="w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
                             required
@@ -42,6 +46,7 @@ const Contact = () => {
                         </label>
                         <input
                             type="email"
+                            name='email'
                             id="email"
                             className="w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
                             required
@@ -53,6 +58,7 @@ const Contact = () => {
                         </label>
                         <input
                             type="tel"
+                            name='phone'
                             id="phone"
                             className="w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
                             required
@@ -63,6 +69,7 @@ const Contact = () => {
                             Message
                         </label>
                         <textarea
+                            name='message'
                             id="message"
                             className="w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
                             rows="5"
