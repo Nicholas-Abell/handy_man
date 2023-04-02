@@ -23,11 +23,11 @@ const Contact = () => {
                 <div className='text-center flex flex-col items-center justify-center gap-4'>
                     <BsMailbox size={60} className='bg-red-800 rounded-full text-white p-1 border-4 border-black' />
                     <h1 className='text-4xl text-red-800 font-bold whitespace-nowrap mb-4'>Email</h1>
-                    <p className='text-2xl'> Down Below or <br />at SMS@gmail.com</p>
+                    <p className='text-2xl'> Down Below or at <br /><em className='text-sm font-bold'>smsconstructionandremodeling@gmail.com</em></p>
                 </div>
             </div>
             <div className="px-4 py-24 max-w-[800px] mx-auto min-h-[500px]">
-                <form action="https://formsubmit.co/17656315946@vtext.com" method="POST">
+                <form action="smsconstructionandremodeling@gmail.com" method="POST">
                     <div className="mb-4">
                         <label className="block mb-2 font-bold text-white">
                             Name
