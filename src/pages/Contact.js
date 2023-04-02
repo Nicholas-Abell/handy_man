@@ -27,7 +27,7 @@ const Contact = () => {
                 </div>
             </div>
             <div className="px-4 py-24 max-w-[800px] mx-auto min-h-[500px]">
-                <form action="smsconstructionandremodeling@gmail.com" method="POST">
+                <form action="https://formsubmit.co/smsconstructionandremodeling@gmail.com" method="POST">
                     <div className="mb-4">
                         <label className="block mb-2 font-bold text-white">
                             Name
@@ -76,6 +76,9 @@ const Contact = () => {
                             required
                         ></textarea>
                     </div>
+                    <input type="hidden" name="_next" value="http://smsconstructionandremodeling.com/" />
+                    <input type="hidden" name="_autoresponse"
+                        value="Thank you for choosing SMS Construction & Remodeling. We will get in touch soon." />
                     <div>
                         <button
                             type="submit"
