@@ -14,10 +14,10 @@ const Hero = () => {
             style={{
                 backgroundImage: `url(${after})`,
             }}>
-            <img src={before} className='top-0 left-0 w-full h-screen object-cover absolute z-10 ease-in opacity-100 duration-[3s]' style={fadeOut ? { opacity: '0', transitionDelay: '1s' } : { opacity: '100' }} />
+            <img src={before} alt='before' className='top-0 left-0 w-full h-screen object-cover absolute z-10 ease-in opacity-100 duration-[3s]' style={fadeOut ? { opacity: '0', transitionDelay: '1s' } : { opacity: '100' }} />
             <div className='bg-black/10 absolute top-0 w-full h-screen'></div>
             <div className='absolute top-0 left-0 w-full h-full flex flex-col gap-4 justify-center items-center z-20'>
-                <h1 className='text-white text-3xl md:text-5xl lg:text-7xl'>Transform Your Home</h1>
+                <h1 className='text-white text-3xl md:text-5xl lg:text-6xl xl:text-7xl'>SMS <br className='sm:hidden' /> Construction & Remodeling</h1>
                 <a href='/contact'><button className='text-white bg-red-800 border-black hover:bg-gray-400 hover:shadow-xl ease-in duration-300 max-w-[200px]'>Contact us Today</button></a>
             </div>
         </div>

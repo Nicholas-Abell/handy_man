@@ -8,7 +8,7 @@ const BeforeAfter = () => {
     <>
       <div className='relative w-full lg:w-[50%] h-[80vh] overflow-hidden border border-red-500 object-cover'>
         <div className='bg-slate-400/50 absolute top-0 left-0 z-50 py-2 px-4 font-bold'>
-          <h1 className='text-2xl'>BEFORE</h1>
+          <h2 className='text-2xl'>BEFORE</h2>
         </div>
         <ReactCompareImage
           leftImage={before}
@@ -17,7 +17,7 @@ const BeforeAfter = () => {
           leftImageCss={{ height: '100vh', objectFit: 'cover' }}
         />;
         <div className='bg-slate-400/50 absolute top-0 right-0 z-50 py-2 px-4 font-bold'>
-          <h1 className='text-2xl'>AFTER</h1>
+          <h2 className='text-2xl'>AFTER</h2>
         </div>
       </div>
     </>

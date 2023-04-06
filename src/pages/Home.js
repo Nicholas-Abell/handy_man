@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React from 'react';
 import Hero from '../components/Hero';
 import AboutUs from '../components/AboutUs';
 import CardHolder from '../components/CardHolder';

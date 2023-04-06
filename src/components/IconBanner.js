@@ -10,7 +10,7 @@ const IconBanner = () => {
     return (
         <div className='bg-white w-full flex flex-col justify-center items-center lg:px-48 py-24 gap-24'>
             <div className='text-center'>
-                <h1 className='font-bold text-3xl p-4'>Any Project for Your Home</h1>
+                <h2 className='font-bold text-3xl p-4'>Any Project for Your Home</h2>
                 <p className='text-gray-500'>Think of us for your next big project</p>
             </div>
             <div className='flex flex-col md:flex-row gap-24 md:gap-0 items-center justify-center w-full'>
