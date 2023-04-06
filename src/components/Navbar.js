@@ -29,7 +29,7 @@ const Navbar = () => {
             </div>
             <div className='fixed w-full justify-between items-center p-4 z-[999] bg-gradient-to-b from-black to-black/20 text-white hidden md:flex'>
                 <div>
-                    <h1>SMS</h1>
+                    <p className='text-2xl'>SMS</p>
                 </div>
                 <ul className='flex w-full z-10 items-center justify-center gap-12'>
                     <li className='font-bold text-gray-400 text-3xl cursor-pointer hover:text-white'><a href='/'>Home</a></li>
