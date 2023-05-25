@@ -1,3 +1,49 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    color-scheme: only light;
+  }
+  
+  .font-inter {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .font-roboto {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  @layer base {
+    button {
+      @apply border py-2 px-3 rounded-full
+    }
+  
+    h1 {
+      @apply font-bold text-xl md:text-2xl lg:text-3xl font-roboto
+    }
+  
+    h2,
+    h3 {
+      @apply font-roboto;
+    }
+  
+    body {
+      @apply font-inter
+    }
+  
+  }
+  
+  .slide-in-bottom {
+    transform: translateX(0);
+    opacity: 100;
+  }
