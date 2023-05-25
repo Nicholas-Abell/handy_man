@@ -1,7 +1,8 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import after from "../assets/images/after.jpg";
-import before from "../assets/images/before_greyscale.jpeg";
+import after from "../../assets/images/after.jpg";
+import before from "../../assets/images/before_greyscale.jpeg";
+import Image from "next/image";
 
 const Hero = () => {
   const [fadeOut, setFadeOut] = useState(false);
@@ -11,13 +12,13 @@ const Hero = () => {
   }, []);
 
   return (
-    <div
-      className="w-full h-screen relative text-white lg:bg-fixed bg-center bg-no-repeat bg-cover"
-      style={{
-        backgroundImage: `url(${after})`,
-      }}
-    >
-      <img
+    <div className="w-full h-screen relative text-white lg:bg-fixed bg-center bg-no-repeat bg-cover">
+      <Image
+        src={after as any}
+        alt="after"
+        className="top-0 left-0 -z-10 w-full h-screen object-cover absolute ease-in opacity-100 duration-[3s]"
+      />
+      <Image
         src={before as any}
         alt="before"
         className="top-0 left-0 w-full h-screen object-cover absolute z-10 ease-in opacity-100 duration-[3s]"
