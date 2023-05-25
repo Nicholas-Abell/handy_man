@@ -1,7 +1,7 @@
-import Image from "next/image";
 import Hero from "./components/Home/Hero";
 import AboutUs from "./components/Home/AboutUs";
 import CardHolder from "./components/Home/CardHolder";
+import IconBanner from "./components/Home/IconBanner";
 
 export default function Home() {
   return (
@@ -9,9 +9,7 @@ export default function Home() {
       <Hero />
       <AboutUs />
       <CardHolder />
-      <AboutUs />
-      {/* <IconBanner />
-      <ExteriorInterior /> */}
+      <IconBanner />
     </main>
   );
 }
