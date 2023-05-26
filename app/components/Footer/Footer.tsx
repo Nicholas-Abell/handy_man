@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { BsTelephone } from "react-icons/bs";
 import { FiMail } from "react-icons/fi";
@@ -13,24 +14,24 @@ const Footer = () => {
           <BsTelephone size={25} />
           <h2> Call Us</h2>
         </a>
-        <a
+        <Link
           href="/contact"
           className="flex items-center justify-center gap-4 hover:text-white cursor-pointer"
         >
           <FiMail size={25} />
           <h2> Email Us</h2>
-        </a>
+        </Link>
       </div>
       <div className="flex flex-col sm:flex-row items-center text-3xl justify-center gap-8">
-        <a href="/" className="hover:text-white">
+        <Link href="/" className="hover:text-white">
           <h2>About Us</h2>
-        </a>
-        <a href="/services" className="hover:text-white ">
+        </Link>
+        <Link href="/services" className="hover:text-white ">
           <h2>Our Services</h2>
-        </a>
-        <a href="/gallery" className="hover:text-white">
+        </Link>
+        <Link href="/gallery" className="hover:text-white">
           <h2>Gallery</h2>
-        </a>
+        </Link>
       </div>
     </div>
   );
