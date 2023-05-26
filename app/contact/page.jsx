@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React from 'react';
 
 //icons
 import { BsMailbox } from 'react-icons/bs';
