@@ -1,7 +1,8 @@
-'use client';
+"use client";
 import React, { useState } from "react";
 import { HiMenuAlt3 } from "react-icons/hi";
 import { BsTelephone } from "react-icons/bs";
+import Link from "next/link";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -37,16 +38,16 @@ const Navbar = () => {
         >
           <ul className="flex w-full h-full bg-black/90 flex-col z-10 items-center justify-center gap-12">
             <li className="font-bold text-gray-400 text-3xl cursor-pointer hover:text-white">
-              <a href="/">Home</a>
+              <Link href="/">Home</Link>
             </li>
             <li className="font-bold text-gray-400 text-3xl cursor-pointer hover:text-white">
-              <a href="/services">Services</a>
+              <Link href="/services">Services</Link>
             </li>
             <li className="font-bold text-gray-400 text-3xl cursor-pointer hover:text-white">
-              <a href="/gallery">Gallery</a>
+              <Link href="/gallery">Gallery</Link>
             </li>
             <li className="font-bold text-gray-400 text-3xl cursor-pointer hover:text-white">
-              <a href="/contact">Contact</a>
+              <Link href="/contact">Contact</Link>
             </li>
           </ul>
         </div>
@@ -57,16 +58,16 @@ const Navbar = () => {
         </div>
         <ul className="flex w-full z-10 items-center justify-center gap-12">
           <li className="font-bold text-gray-400 text-3xl cursor-pointer hover:text-white">
-            <a href="/">Home</a>
+            <Link href="/">Home</Link>
           </li>
           <li className="font-bold text-gray-400 text-3xl cursor-pointer hover:text-white">
-            <a href="/services">Services</a>
+            <Link href="/services">Services</Link>
           </li>
           <li className="font-bold text-gray-400 text-3xl cursor-pointer hover:text-white">
-            <a href="/gallery">Gallery</a>
+            <Link href="/gallery">Gallery</Link>
           </li>
           <li className="font-bold text-gray-400 text-3xl cursor-pointer hover:text-white">
-            <a href="/contact">Contact</a>
+            <Link href="/contact">Contact</Link>
           </li>
         </ul>
         {!showNumber ? (
