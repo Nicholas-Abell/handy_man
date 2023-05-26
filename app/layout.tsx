@@ -10,7 +10,16 @@ export const metadata: Metadata = {
   title: "SMS Construction and Remodeling",
   description:
     "SMS Construction and Remodeling. A Local Handyman serving Brownstown Indiana and surrounding counties.",
-  keywords: ["Handy Man", "Brownstown Indiana", "Home Improvement"],
+  keywords: [
+    "Handy Man",
+    "Brownstown Indiana",
+    "Home Improvement",
+    "Home Improvement Southern Indiana",
+    "Handy Man Indiana",
+    "SMS Construction",
+    "Construction and Remodeling",
+    "SMS Construction and Remodeling",
+  ],
 };
 
 export default function RootLayout({
