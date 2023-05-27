@@ -1,17 +1,20 @@
-import deck2 from './deck_2.jpg';
-import cabinet from './shelving_1.jpg';
-import awning1 from './awning.jpg';
-import pathWay1 from './pathway_1.jpg';
-import bench from './bench.jpg';
-import patio from './patio.jpg';
-import shelving from './shelving_2.jpg';
-import railing from './railing.jpg';
-import pipe from './pipe.jpg';
-import machinery from './machinery.jpg';
-import awning2 from './awning_2.jpg';
-import after from './after.jpg';
+const deck2 = 'https://i.postimg.cc/xdcw0N4c/deck-2.jpg';
+const cabinet = 'https://i.postimg.cc/tC4VCXpL/shelving-2.jpg';
+const awning1 = 'https://i.postimg.cc/d3dr26Ng/awning.jpg';//c
+const awning2 = 'https://i.postimg.cc/02swgpB2/awning-2.jpg';
+const before = 'https://i.postimg.cc/BnwbvDMF/before-greyscale.jpg'; //c
+const after = 'https://i.postimg.cc/Y9kXLcyJ/after.jpg';//c
+const pathWay1 = 'https://i.postimg.cc/HsVfgycR/pathway-1.jpg';
+const bench = 'https://i.postimg.cc/65Px20xB/bench.jpg';
+const patio = 'https://i.postimg.cc/XJszMjVn/patio.jpg';
+const shelving = 'https://i.postimg.cc/L8SwZ00K/shelving-1.jpg';
+const railing = 'https://i.postimg.cc/cHCVLgkv/railing.jpg';
+const pipe = 'https://i.postimg.cc/wjD4qc6f/pipe.jpg';
+const machinery = 'https://i.postimg.cc/W300rSHC/machinery.jpg';
+const parallax = 'https://i.postimg.cc/XNBydLpQ/parallax.jpg';
 
 export default {
+    before,
     deck2,
     cabinet,
     awning1,
@@ -24,4 +27,5 @@ export default {
     machinery,
     awning2,
     after,
+    parallax,
 };
