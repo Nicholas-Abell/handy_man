@@ -38,16 +38,24 @@ const Navbar = () => {
         >
           <ul className="flex w-full h-full bg-black/90 flex-col z-10 items-center justify-center gap-12">
             <li className="font-bold text-gray-400 text-3xl cursor-pointer hover:text-white">
-              <Link href="/">Home</Link>
+              <Link onClick={() => setNav(false)} href="/">
+                Home
+              </Link>
             </li>
             <li className="font-bold text-gray-400 text-3xl cursor-pointer hover:text-white">
-              <Link href="/services">Services</Link>
+              <Link onClick={() => setNav(false)} href="/services">
+                Services
+              </Link>
             </li>
             <li className="font-bold text-gray-400 text-3xl cursor-pointer hover:text-white">
-              <Link href="/gallery">Gallery</Link>
+              <Link onClick={() => setNav(false)} href="/gallery">
+                Gallery
+              </Link>
             </li>
             <li className="font-bold text-gray-400 text-3xl cursor-pointer hover:text-white">
-              <Link href="/contact">Contact</Link>
+              <Link onClick={() => setNav(false)} href="/contact">
+                Contact
+              </Link>
             </li>
           </ul>
         </div>
