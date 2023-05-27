@@ -11,11 +11,6 @@ const CardHolder = () => {
         backgroundImage: `url(${parallax})`,
       }}
     >
-      <img
-        src={parallax}
-        alt="parallax"
-        className="object-cover bg-no-repeat lg:bg-fixed"
-      />
       <Card title={"PATIOS"} img={patio} />
       <Card title={"AWNINGS"} img={awning1} />
       <Card title={"DECKS"} img={deck2} />

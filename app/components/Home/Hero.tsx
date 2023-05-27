@@ -11,12 +11,12 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="w-full h-screen relative text-white lg:bg-fixed bg-center bg-no-repeat bg-cover">
-      <img
-        src={after}
-        alt="after"
-        className="top-0 left-0 -z-10 w-full h-screen object-cover absolute ease-in opacity-100 duration-[3s]"
-      />
+    <div
+      className="w-full h-screen relative text-white lg:bg-fixed bg-center bg-no-repeat bg-cover"
+      style={{
+        backgroundImage: `url(${after})`,
+      }}
+    >
       <img
         src={before}
         alt="before"
