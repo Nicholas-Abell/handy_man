@@ -23,6 +23,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/components/Home/Hero.tsx", "app/components/Home/AboutUs.tsx", "app/components/Home/CardHolder.tsx", "app/components/Home/IconBanner.tsx", "app/components/Card.tsx"],
   "exclude": ["node_modules"]
 }

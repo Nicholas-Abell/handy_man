@@ -1,11 +1,11 @@
 import React from "react";
 
-// type CardProps = {
-//   img: StaticImageData;
-//   title: string;
-// };
+type CardProps = {
+  img: string;
+  title: string;
+};
 
-const Card = ({ img, title }) => {
+const Card = ({ img, title }: CardProps) => {
   return (
     <div className="bg-red-800 text-white border-black border-4 rounded-lg min-w-[250px] h-[250px] w-[250px] hover:shadow-lg scrollbar-hide z-10">
       <div

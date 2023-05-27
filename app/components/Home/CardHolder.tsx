@@ -1,10 +1,9 @@
 import React from "react";
 import Card from "../Card";
-import Image from "next/image";
 import images from "@/app/assets/images/images";
 
 const CardHolder = () => {
-  const {patio,awning1,deck2,cabinet, parallax} = images;
+  const { patio, awning1, deck2, cabinet, parallax } = images;
   return (
     <div
       className="w-full relative border-black border-t-4 border-b-4 bg-black py-8 px-[20px] lg:px-4 flex flex-wrap items-center justify-center gap-4 lg:gap-12 lg:bg-fixed bg-center bg-no-repeat bg-cover"
@@ -15,7 +14,6 @@ const CardHolder = () => {
       <img
         src={parallax}
         alt="parallax"
-        fill
         className="object-cover bg-no-repeat lg:bg-fixed"
       />
       <Card title={"PATIOS"} img={patio} />
