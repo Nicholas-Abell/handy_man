@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { HiMenuAlt3 } from "react-icons/hi";
 import { BsTelephone } from "react-icons/bs";
+import { GoTools } from "react-icons/go";
 import Link from "next/link";
 
 const Navbar = () => {
@@ -14,7 +15,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="fixed w-full flex justify-between items-center p-4 z-[999] bg-gradient-to-b from-black to-black/20 text-white md:hidden">
+      <div className="fixed w-full flex justify-between items-center p-4 z-[999] bg-black text-gray-300 md:hidden">
         <div className="flex items-center justify-between w-[50%]">
           <a href="tel:8125251307">
             <BsTelephone
@@ -27,7 +28,7 @@ const Navbar = () => {
         <HiMenuAlt3
           onClick={() => setNav(!nav)}
           size={25}
-          className="z-50 cursor-pointer"
+          className="z-50 cursor-pointer hover:text-white"
         />
         <div
           className={
@@ -61,39 +62,32 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="fixed w-full justify-between items-center p-4 z-[999] bg-gradient-to-b from-black to-black/20 text-white hidden md:flex">
-        <div className="w-full flex justify-between items-center px-4 border-b-2 border-t-2 border-red">
-          <ul className="flex w-full z-10 items-center justify-center gap-12">
-            <li className="font-bold text-gray-400 text-3xl cursor-pointer hover:text-white">
-              <Link href="/">Home</Link>
-            </li>
-            <li className="font-bold text-gray-400 text-3xl cursor-pointer hover:text-white">
-              <Link href="/services">Services</Link>
-            </li>
-            <div className="border rounded-full py-4 px-8">
-              <p className="text-2xl">SMS</p>
+      <div className="fixed opacity-60 hover:opacity-100 ease-in-out duration-200 w-full justify-between items-center border-b-2 border-black p-4 z-[999] bg-black text-black hidden md:flex">
+        <div className="w-full flex justify-between items-center px-4">
+          <ul className="flex w-full z-10 text-gray-400 items-center justify-center gap-12">
+            <div className="flex w-full py-2 justify-center items-center gap-12 border-b-2 border-t-2 border-gray-400">
+              <li className="font-bold text-3xl cursor-pointer hover:text-white">
+                <Link href="/">Home</Link>
+              </li>
+              <li className="font-bold text-3xl cursor-pointer hover:text-white">
+                <Link href="/services">Services</Link>
+              </li>
             </div>
-            <li className="font-bold text-gray-400 text-3xl cursor-pointer hover:text-white">
-              <Link href="/gallery">Gallery</Link>
-            </li>
-            <li className="font-bold text-gray-400 text-3xl cursor-pointer hover:text-white">
-              <Link href="/contact">Contact</Link>
-            </li>
+            <div className="flex flex-col justify-center items-center">
+              <p className="text-2xl">SMS</p>
+              <div className="rounded-full border border-gray-300 p-2">
+                <GoTools size={25} />
+              </div>
+            </div>
+            <div className="flex w-full py-2 justify-center items-center gap-12 border-b-2 border-t-2 border-gray-400">
+              <li className="font-bold text-3xl cursor-pointer hover:text-white">
+                <Link href="/gallery">Gallery</Link>
+              </li>
+              <li className="font-bold text-3xl cursor-pointer hover:text-white">
+                <Link href="/contact">Contact</Link>
+              </li>
+            </div>
           </ul>
-          {!showNumber ? (
-            <BsTelephone
-              size={25}
-              onClick={() => setShowNumber(true)}
-              className="cursor-pointer hover:text-green-400"
-            />
-          ) : (
-            <h2
-              onClick={handleCopyClick}
-              className="whitespace-nowrap cursor-pointer hover:text-green-400"
-            >
-              812-525-1307
-            </h2>
-          )}
         </div>
       </div>
     </>
