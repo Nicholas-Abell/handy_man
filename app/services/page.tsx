@@ -41,7 +41,7 @@ const Services = () => {
               size={80}
               className="text-white bg-red-800 rounded-full p-2 border-black border-4"
             />
-            <h1 className="text-3xl font-bold">Carpentry</h1>
+            <h2 className="text-3xl font-bold">Carpentry</h2>
           </div>
         </div>
         <div
@@ -55,7 +55,7 @@ const Services = () => {
               size={80}
               className="text-white bg-red-800 rounded-full p-2 border-black border-4"
             />
-            <h1 className="text-3xl font-bold">Interior</h1>
+            <h2 className="text-3xl font-bold">Interior</h2>
           </div>
         </div>
         <div
@@ -69,7 +69,7 @@ const Services = () => {
               size={80}
               className="text-white bg-red-800 rounded-full p-2 border-black border-4"
             />
-            <h1 className="text-3xl font-bold">Exterior</h1>
+            <h2 className="text-3xl font-bold">Exterior</h2>
           </div>
         </div>
         <div
@@ -83,7 +83,7 @@ const Services = () => {
               size={80}
               className="text-white bg-red-800 rounded-full p-2 border-black border-4"
             />
-            <h1 className="text-3xl font-bold">Appliances</h1>
+            <h2 className="text-3xl font-bold">Appliances</h2>
           </div>
         </div>
       </div>
@@ -109,28 +109,29 @@ const Services = () => {
               <div className="w-full text-center flex flex-col items-center justify-center">
                 <ul className="w-full text-3xl uppercase font-bold text-white">
                   <li>
-                    <div className="w-full bg-red-800 py-2">FURNITURE</div>
+                    <h2 className="w-full bg-red-800 py-2">FURNITURE</h2>
                   </li>
                   <li>
-                    <div className="w-full text-red-800 py-2">FENCES</div>
+                    <h2 className="w-full text-red-800 py-2">FENCES</h2>
                   </li>
                   <li>
-                    <div className="w-full bg-red-800 py-2">DECKS</div>
+                    <h2 className="w-full bg-red-800 py-2">DECKS</h2>
                   </li>
                   <li>
-                    <div className="w-full text-red-800 py-2">TABLES</div>
+                    <h2 className="w-full text-red-800 py-2">TABLES</h2>
                   </li>
                   <li>
-                    <div className="w-full bg-red-800 py-2">SHELVES</div>
+                    <h2 className="w-full bg-red-800 py-2">SHELVES</h2>
                   </li>
                   <li>
-                    <div className="w-full text-red-800 py-2">CABINENTS</div>
+                    <h2 className="w-full text-red-800 py-2">CABINENTS</h2>
                   </li>
                   <li>
-                    <div className="w-full bg-red-800 py-2">BENCHES</div>
+                    <h2 className="w-full bg-red-800 py-2">BENCHES</h2>
                   </li>
+                  h2
                   <li>
-                    <div className="w-full text-red-800 py-2">FLOORING</div>
+                    <h2 className="w-full text-red-800 py-2">FLOORING</h2>
                   </li>
                 </ul>
               </div>
@@ -150,25 +151,25 @@ const Services = () => {
               <div className="w-full text-center flex flex-col items-center justify-center">
                 <ul className="w-full text-3xl uppercase font-bold text-white">
                   <li>
-                    <div className="w-full bg-red-800 py-2">LIGHT PAINTING</div>
+                    <h2 className="w-full bg-red-800 py-2">LIGHT PAINTING</h2>
                   </li>
                   <li>
-                    <div className="w-full text-red-800 py-2">FLOORS</div>
+                    <h2 className="w-full text-red-800 py-2">FLOORS</h2>
                   </li>
                   <li>
-                    <div className="w-full bg-red-800 py-2">WALLS</div>
+                    <h2 className="w-full bg-red-800 py-2">WALLS</h2>
                   </li>
                   <li>
-                    <div className="w-full text-red-800 py-2">DOORS</div>
+                    <h2 className="w-full text-red-800 py-2">DOORS</h2>h2
                   </li>
                   <li>
-                    <div className="w-full bg-red-800 py-2">WINDOWS</div>
+                    <h2 className="w-full bg-red-800 py-2">WINDOWS</h2>
                   </li>
                   <li>
-                    <div className="w-full text-red-800 py-2">LOCKS</div>
+                    <h2 className="w-full text-red-800 py-2">LOCKS</h2>
                   </li>
                   <li>
-                    <div className="w-full bg-red-800 py-2">TABLES</div>
+                    <h2 className="w-full bg-red-800 py-2">TABLES</h2>
                   </li>
                 </ul>
               </div>
@@ -193,15 +194,15 @@ const Services = () => {
               <div className="w-full text-center flex flex-col items-center justify-center">
                 <ul className="w-full text-3xl uppercase font-bold text-white">
                   <li>
-                    <div className="w-full bg-red-800 py-2">LANDSCAPING</div>
+                    <h2 className="w-full bg-red-800 py-2">LANDSCAPING</h2>
                   </li>
                   <li>
-                    <div className="w-full text-red-800 py-2">
+                    <h2 className="w-full text-red-800 py-2">
                       GUTTER CLEANING
-                    </div>
+                    </h2>
                   </li>
                   <li>
-                    <div className="w-full bg-red-800 py-2">WEED REMOVAL</div>
+                    <h2 className="w-full bg-red-800 py-2">WEED REMOVAL</h2>
                   </li>
                   <li>
                     <div className="w-full text-red-800 py-2">
@@ -209,13 +210,13 @@ const Services = () => {
                     </div>
                   </li>
                   <li>
-                    <div className="w-full bg-red-800 py-2">MOWING</div>
+                    <h2 className="w-full bg-red-800 py-2">MOWING</h2>
                   </li>
                   <li>
-                    <div className="w-full text-red-800 py-2">TREE REMOVAL</div>
+                    <h2 className="w-full text-red-800 py-2">TREE REMOVAL</h2>
                   </li>
                   <li>
-                    <div className="w-full bg-red-800 py-2">PATHWAYS</div>
+                    <h2 className="w-full bg-red-800 py-2">PATHWAYS</h2>
                   </li>
                 </ul>
               </div>
@@ -235,22 +236,22 @@ const Services = () => {
               <div className="w-full text-center flex flex-col items-center justify-center">
                 <ul className="w-full text-3xl uppercase font-bold text-white">
                   <li>
-                    <div className="w-full bg-red-800 py-2">
+                    <h2 className="w-full bg-red-800 py-2">
                       LIGHT BULB REPLACEMENT
-                    </div>
+                    </h2>
                   </li>
                   <li>
-                    <div className="w-full text-red-800 py-2">
+                    <h2 className="w-full text-red-800 py-2">
                       BASIC HVAC MAINTENANCE
-                    </div>
+                    </h2>
                   </li>
                   <li>
-                    <div className="w-full bg-red-800 py-2">T.V. MOUNTING</div>
+                    <h2 className="w-full bg-red-800 py-2">T.V. MOUNTING</h2>
                   </li>
                   <li>
-                    <div className="w-full text-red-800 py-2">
+                    <h2 className="w-full text-red-800 py-2">
                       SMART HOME INSTALLATION
-                    </div>
+                    </h2>
                   </li>
                 </ul>
               </div>
