@@ -30,10 +30,10 @@ const Services = () => {
       <div className="w-full h-[40vh] flex justify-center items-center text-white">
         <h1 className="text-5xl lg:text-8xl underline">Our Services</h1>
       </div>
-      <div className="bg-red-800 w-full pb-24 flex justify-center items-center gap-8 flex-wrap">
+      <div className="bg-red-800 w-full pb-2 flex justify-center items-center gap-8 flex-wrap">
         <div
           onClick={() => setSelectedCard("Carpentry")}
-          className={`w-[350px] h-[350px] rounded-lg flex flex-col items-center justify-center p-4 gap-4 cursor-pointer hover:bg-gray-300 
+          className={`w-[200px] h-[200px] rounded-lg flex flex-col items-center justify-center p-4 gap-4 cursor-pointer hover:bg-gray-300 
           ${selectedCard === "Carpentry" ? "bg-gray-300" : "bg-white"}`}
         >
           <div className="flex flex-col items-center justify-center">
@@ -46,7 +46,7 @@ const Services = () => {
         </div>
         <div
           onClick={() => setSelectedCard("Interior")}
-          className={`bg-white w-[350px] h-[350px] rounded-lg flex flex-col items-center justify-center gap-4 cursor-pointer hover:bg-gray-300  ${
+          className={`w-[200px] h-[200px] rounded-lg flex flex-col items-center justify-center gap-4 cursor-pointer hover:bg-gray-300  ${
             selectedCard === "Interior" ? "bg-gray-300" : "bg-white"
           }`}
         >
@@ -60,7 +60,7 @@ const Services = () => {
         </div>
         <div
           onClick={() => setSelectedCard("Exterior")}
-          className={`bg-white w-[350px] h-[350px] rounded-lg flex flex-col items-center justify-center pt-8 cursor-pointer hover:bg-gray-300  ${
+          className={`w-[200px] h-[200px] rounded-lg flex flex-col items-center justify-center pt-8 cursor-pointer hover:bg-gray-300  ${
             selectedCard === "Exterior" ? "bg-gray-300" : "bg-white"
           }`}
         >
@@ -74,7 +74,7 @@ const Services = () => {
         </div>
         <div
           onClick={() => setSelectedCard("Appliances")}
-          className={`bg-white w-[350px] h-[350px] rounded-lg flex flex-col items-center justify-center gap-4 border-black cursor-pointer hover:bg-gray-300  ${
+          className={`w-[200px] h-[200px] rounded-lg flex flex-col items-center justify-center gap-4 border-black cursor-pointer hover:bg-gray-300  ${
             selectedCard === "Appliances" ? "bg-gray-300" : "bg-white"
           }`}
         >
@@ -93,20 +93,20 @@ const Services = () => {
         </h2>
         {selectedCard === "Carpentry" && (
           <>
-            <div className="w-full gap-4 flex justify-between items-center pl-4 py-4">
-              <div className="flex items-center gap-4 w-[50%] justify-center">
+            <div className="w-full flex-col-reverse md:flex-row gap-4 flex justify-between items-center py-4">
+              <div className="flex w-full gap-2 justify-center md:pl-4 overflow-hidden">
                 <img
                   alt={selectedCard}
                   src={shelving}
-                  className="w-[380px] h-[420px] rounded border-red-800 border-4"
+                  className="w-full h-[400px] rounded border-red-800 border-4"
                 />
                 <img
                   alt={selectedCard}
                   src={cabinet}
-                  className="w-[380px] h-[420px] rounded border-red-800 border-4"
+                  className="hidden lg:block w-full h-[400px] rounded border-red-800 border-4"
                 />
               </div>
-              <div className="w-[50%] text-center flex flex-col items-center justify-center">
+              <div className="w-full text-center flex flex-col items-center justify-center">
                 <ul className="w-full text-3xl uppercase font-bold text-white">
                   <li>
                     <div className="w-full bg-red-800 py-2">FURNITURE</div>
@@ -139,15 +139,15 @@ const Services = () => {
         )}
         {selectedCard === "Interior" && (
           <>
-            <div className="w-full gap-4 flex justify-between items-center pl-4 py-4">
-              <div className="flex w-[50%] gap-4 justify-center">
+            <div className="w-full flex-col-reverse md:flex-row gap-4 flex justify-between items-center py-4">
+              <div className="flex w-full gap-2 justify-center pl-4 overflow-hidden">
                 <img
                   alt={selectedCard}
                   src={after}
-                  className="w-[380px] h-[420px] rounded border-red-800 border-4"
+                  className="w-full h-[400px] rounded border-red-800 border-4"
                 />
               </div>
-              <div className="w-[50%] text-center flex flex-col items-center justify-center">
+              <div className="w-full text-center flex flex-col items-center justify-center">
                 <ul className="w-full text-3xl uppercase font-bold text-white">
                   <li>
                     <div className="w-full bg-red-800 py-2">LIGHT PAINTING</div>
@@ -177,20 +177,20 @@ const Services = () => {
         )}
         {selectedCard === "Exterior" && (
           <>
-            <div className="w-full gap-4 flex justify-between items-center pl-4 py-4">
-              <div className="flex w-[50%] gap-4 justify-center">
+            <div className="w-full flex-col-reverse md:flex-row gap-4 flex justify-between items-center py-4">
+              <div className="flex w-full gap-2 justify-center pl-4 overflow-hidden">
                 <img
                   alt={selectedCard}
                   src={pathWay1}
-                  className="w-[380px] h-[420px] rounded border-red-800 border-4"
+                  className="w-full h-[400px] rounded border-red-800 border-4"
                 />
                 <img
                   alt={selectedCard}
                   src={pipe}
-                  className="w-[380px] h-[420px] rounded border-red-800 border-4"
+                  className="hidden lg:block w-full h-[400px] rounded border-red-800 border-4"
                 />
               </div>
-              <div className="w-[50%] text-center flex flex-col items-center justify-center">
+              <div className="w-full text-center flex flex-col items-center justify-center">
                 <ul className="w-full text-3xl uppercase font-bold text-white">
                   <li>
                     <div className="w-full bg-red-800 py-2">LANDSCAPING</div>
@@ -224,15 +224,15 @@ const Services = () => {
         )}
         {selectedCard === "Appliances" && (
           <>
-            <div className="w-full gap-4 flex justify-between items-center pl-4 py-4">
-              <div className="flex w-[50%] gap-4 justify-center">
+            <div className="w-full flex-col-reverse md:flex-row gap-4 flex justify-between items-center py-4">
+              {/* <div className="flex w-full gap-2 justify-center pl-4 overflow-hidden">
                 <img
                   alt={selectedCard}
                   src={after}
-                  className="w-[380px] h-[420px] rounded border-red-800 border-4"
+                  className="w-full h-[400px] rounded border-red-800 border-4"
                 />
-              </div>
-              <div className="w-[50%] text-center flex flex-col items-center justify-center">
+              </div> */}
+              <div className="w-full text-center flex flex-col items-center justify-center">
                 <ul className="w-full text-3xl uppercase font-bold text-white">
                   <li>
                     <div className="w-full bg-red-800 py-2">
