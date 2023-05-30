@@ -140,7 +140,7 @@ const Services = () => {
         {selectedCard === "Interior" && (
           <>
             <div className="w-full flex-col-reverse md:flex-row gap-4 flex justify-between items-center py-4">
-              <div className="flex w-full gap-2 justify-center pl-4 overflow-hidden">
+              <div className="flex w-full md:w-[50%] gap-2 justify-center md:pl-4 overflow-hidden">
                 <img
                   alt={selectedCard}
                   src={after}
@@ -178,7 +178,7 @@ const Services = () => {
         {selectedCard === "Exterior" && (
           <>
             <div className="w-full flex-col-reverse md:flex-row gap-4 flex justify-between items-center py-4">
-              <div className="flex w-full gap-2 justify-center pl-4 overflow-hidden">
+              <div className="flex w-full gap-2 justify-center md:pl-4 overflow-hidden">
                 <img
                   alt={selectedCard}
                   src={pathWay1}
@@ -225,7 +225,7 @@ const Services = () => {
         {selectedCard === "Appliances" && (
           <>
             <div className="w-full flex-col-reverse md:flex-row gap-4 flex justify-between items-center py-4">
-              {/* <div className="flex w-full gap-2 justify-center pl-4 overflow-hidden">
+              {/* <div className="flex w-full gap-2 justify-center md:pl-4 overflow-hidden">
                 <img
                   alt={selectedCard}
                   src={after}
