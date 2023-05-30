@@ -2,6 +2,7 @@ import Hero from "./components/Home/Hero";
 import AboutUs from "./components/Home/AboutUs";
 import CardHolder from "./components/Home/CardHolder";
 import IconBanner from "./components/Home/IconBanner";
+import Break from "./components/Home/Break";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <AboutUs />
       <CardHolder />
       <IconBanner />
+      <Break />
     </main>
   );
 }
