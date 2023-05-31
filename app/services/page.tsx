@@ -88,7 +88,7 @@ const Services = () => {
               <div className="flex w-full md:w-[50%] gap-2 justify-center md:pl-4 overflow-hidden">
                 {shelvingLocal ? (
                   <Image
-                    className="w-full h-[400px] rounded border-red-800 border-4"
+                    className="w-[50%] md:w-full h-[400px] rounded border-red-800 border-4"
                     src={shelvingLocal}
                     alt="shelving"
                     width={0}
@@ -98,7 +98,7 @@ const Services = () => {
                   <img
                     alt={selectedCard}
                     src={shelving}
-                    className="w-full h-[400px] rounded border-red-800 border-4"
+                    className="w-[50%] md:w-full h-[400px] rounded border-red-800 border-4"
                   />
                 )}
                 {cabinentLocal ? (
@@ -158,13 +158,13 @@ const Services = () => {
                     alt="interior"
                     width={0}
                     height={0}
-                    className="w-full h-[400px] rounded border-red-800 border-4"
+                    className="w-[50%] md:w-full h-[400px] rounded border-red-800 border-4"
                   />
                 ) : (
                   <img
                     alt={selectedCard}
                     src={after}
-                    className="w-full h-[400px] rounded border-red-800 border-4"
+                    className="w-[50%] md:w-full h-[400px] rounded border-red-800 border-4"
                   />
                 )}
               </div>
@@ -204,13 +204,13 @@ const Services = () => {
                   <Image
                     src={pathway1Local}
                     alt={selectedCard}
-                    className="w-full h-[400px] rounded border-red-800 border-4"
+                    className="w-[50%] md:w-full h-[400px] rounded border-red-800 border-4"
                   />
                 ) : (
                   <img
                     alt={selectedCard}
                     src={pathWay1}
-                    className="w-full h-[400px] rounded border-red-800 border-4"
+                    className="w-[50%] md:w-full h-[400px] rounded border-red-800 border-4"
                   />
                 )}
                 {pipeLocal ? (
