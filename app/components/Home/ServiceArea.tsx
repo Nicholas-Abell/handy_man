@@ -1,5 +1,5 @@
 import React from "react";
-import logoLocal from "../../assets/images/logo.jpg";
+import logoLocal from "../../../public/logo.jpg";
 import Image from "next/image";
 
 const ServiceArea: React.FC = () => {

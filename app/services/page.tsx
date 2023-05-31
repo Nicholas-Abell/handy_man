@@ -5,11 +5,11 @@ import { BsLightbulb } from "react-icons/bs";
 import { AiOutlineFormatPainter } from "react-icons/ai";
 import images from "../assets/images/images";
 import Image from "next/image";
-import shelvingLocal from "../assets/images/shelving_1.jpg";
-import cabinentLocal from "../assets/images/shelving_2.jpg";
-import afterLocal from "../assets/images/after.jpg";
-import pathway1Local from "../assets/images/pathway_1.jpg";
-import pipeLocal from "../assets/images/pipe.jpg";
+import shelvingLocal from "../../public/shelving_1.jpg";
+import cabinentLocal from "../../publicg/shelving_2.jpg";
+import afterLocal from "../../publicg/after.jpg";
+import pathway1Local from "../../publicg/pathway_1.jpg";
+import pipeLocal from "../../publicg/pipe.jpg";
 
 const Services = () => {
   const { cabinet, pathWay1, shelving, pipe, after } = images;

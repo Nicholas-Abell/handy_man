@@ -1,8 +1,8 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import images from "../../assets/images/images";
-import beforeLocal from "../../assets/images/before_greyscale.jpeg";
-import afterLocal from "../../assets/images/after.jpg";
+import beforeLocal from "../../../public/before_greyscale.jpeg";
+import afterLocal from "../../../public/after.jpg";
 import Image from "next/image";
 
 const Hero = () => {

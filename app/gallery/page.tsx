@@ -1,18 +1,18 @@
 import React from "react";
 import Image from "next/image.js";
 import images from "../assets/images/images.js";
-import afterLocal from "../assets/images/after.jpg";
-import deck2Local from "../assets/images/deck_2.jpg";
-import cabinentLocal from "../assets/images/shelving_1.jpg";
-import machineryLocal from "../assets/images/machinery.jpg";
-import pipeLocal from "../assets/images/pipe.jpg";
-import awning2Local from "../assets/images/awning_2.jpg";
-import awningLocal from "../assets/images/awning.jpg";
-import patioLocal from "../assets/images/patio.jpg";
-import pathWay1Local from "../assets/images/pathway_1.jpg";
-import benchLocal from "../assets/images/bench.jpg";
-import cabinent2Local from "../assets/images/shelving_2.jpg";
-import railingLocal from "../assets/images/railing.jpg";
+import afterLocal from "../../public/after.jpg";
+import deck2Local from "../../public/deck_2.jpg";
+import cabinentLocal from "../../public/shelving_1.jpg";
+import machineryLocal from "../../public/machinery.jpg";
+import pipeLocal from "../../public/pipe.jpg";
+import awning2Local from "../../public/awning_2.jpg";
+import awningLocal from "../../public/awning.jpg";
+import patioLocal from "../../public/patio.jpg";
+import pathWay1Local from "../../public/pathway_1.jpg";
+import benchLocal from "../../public/bench.jpg";
+import cabinent2Local from "../../public/shelving_2.jpg";
+import railingLocal from "../../public/railing.jpg";
 
 const Gallery = () => {
   const {
