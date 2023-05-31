@@ -12,21 +12,7 @@ import pathway1Local from "../assets/images/pathway_1.jpg";
 import pipeLocal from "../assets/images/pipe.jpg";
 
 const Services = () => {
-  const {
-    before,
-    deck2,
-    cabinet,
-    awning1,
-    pathWay1,
-    bench,
-    patio,
-    shelving,
-    railing,
-    pipe,
-    machinery,
-    awning2,
-    after,
-  } = images;
+  const { cabinet, pathWay1, shelving, pipe, after } = images;
 
   const [selectedCard, setSelectedCard] = useState("Carpentry");
 
