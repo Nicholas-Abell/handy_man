@@ -7,6 +7,9 @@ import images from "../assets/images/images";
 import Image from "next/image";
 import shelvingLocal from "../assets/images/shelving_1.jpg";
 import cabinentLocal from "../assets/images/shelving_2.jpg";
+import afterLocal from "../assets/images/after.jpg";
+import pathway1Local from "../assets/images/pathway_1.jpg";
+import pipeLocal from "../assets/images/pipe.jpg";
 
 const Services = () => {
   const {
@@ -95,8 +98,8 @@ const Services = () => {
         </h2>
         {selectedCard === "Carpentry" && (
           <>
-            <div className="w-full flex-col-reverse lg:flex-row gap-4 flex justify-between items-center py-4">
-              <div className="flex gap-2 justify-center md:pl-4 overflow-hidden">
+            <div className="w-full flex-col-reverse md:flex-row gap-4 flex justify-between items-center py-4">
+              <div className="flex w-full md:w-[50%] gap-2 justify-center md:pl-4 overflow-hidden">
                 {shelvingLocal ? (
                   <Image
                     className="w-full h-[400px] rounded border-red-800 border-4"
@@ -163,11 +166,21 @@ const Services = () => {
           <>
             <div className="w-full flex-col-reverse md:flex-row gap-4 flex justify-between items-center py-4">
               <div className="flex w-full md:w-[50%] gap-2 justify-center md:pl-4 overflow-hidden">
-                <img
-                  alt={selectedCard}
-                  src={after}
-                  className="w-full h-[400px] rounded border-red-800 border-4"
-                />
+                {afterLocal ? (
+                  <Image
+                    src={afterLocal}
+                    alt="interior"
+                    width={0}
+                    height={0}
+                    className="w-full h-[400px] rounded border-red-800 border-4"
+                  />
+                ) : (
+                  <img
+                    alt={selectedCard}
+                    src={after}
+                    className="w-full h-[400px] rounded border-red-800 border-4"
+                  />
+                )}
               </div>
               <div className="w-full text-center flex flex-col items-center justify-center">
                 <ul className="w-full text-3xl uppercase font-bold text-white">
@@ -181,7 +194,7 @@ const Services = () => {
                     <h2 className="w-full bg-red-800 py-2">WALLS</h2>
                   </li>
                   <li>
-                    <h2 className="w-full text-red-800 py-2">DOORS</h2>h2
+                    <h2 className="w-full text-red-800 py-2">DOORS</h2>
                   </li>
                   <li>
                     <h2 className="w-full bg-red-800 py-2">WINDOWS</h2>
@@ -201,16 +214,34 @@ const Services = () => {
           <>
             <div className="w-full flex-col-reverse md:flex-row gap-4 flex justify-between items-center py-4">
               <div className="flex w-full gap-2 justify-center md:pl-4 overflow-hidden">
-                <img
-                  alt={selectedCard}
-                  src={pathWay1}
-                  className="w-full h-[400px] rounded border-red-800 border-4"
-                />
-                <img
-                  alt={selectedCard}
-                  src={pipe}
-                  className="hidden lg:block w-full h-[400px] rounded border-red-800 border-4"
-                />
+                {pathway1Local ? (
+                  <Image
+                    src={pathway1Local}
+                    alt={selectedCard}
+                    className="w-full h-[400px] rounded border-red-800 border-4"
+                  />
+                ) : (
+                  <img
+                    alt={selectedCard}
+                    src={pathWay1}
+                    className="w-full h-[400px] rounded border-red-800 border-4"
+                  />
+                )}
+                {pipeLocal ? (
+                  <Image
+                    src={pipeLocal}
+                    alt={selectedCard}
+                    width={0}
+                    height={0}
+                    className="hidden lg:block w-full h-[400px] rounded border-red-800 border-4"
+                  />
+                ) : (
+                  <img
+                    alt={selectedCard}
+                    src={pipe}
+                    className="hidden lg:block w-full h-[400px] rounded border-red-800 border-4"
+                  />
+                )}
               </div>
               <div className="w-full text-center flex flex-col items-center justify-center">
                 <ul className="w-full text-3xl uppercase font-bold text-white">
@@ -247,13 +278,6 @@ const Services = () => {
         {selectedCard === "Appliances" && (
           <>
             <div className="w-full flex-col-reverse md:flex-row gap-4 flex justify-between items-center py-4">
-              {/* <div className="flex w-full gap-2 justify-center md:pl-4 overflow-hidden">
-                <img
-                  alt={selectedCard}
-                  src={after}
-                  className="w-full h-[400px] rounded border-red-800 border-4"
-                />
-              </div> */}
               <div className="w-full text-center flex flex-col items-center justify-center">
                 <ul className="w-full text-3xl uppercase font-bold text-white">
                   <li>
