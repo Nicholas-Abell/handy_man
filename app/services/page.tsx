@@ -5,6 +5,8 @@ import { BsLightbulb } from "react-icons/bs";
 import { AiOutlineFormatPainter } from "react-icons/ai";
 import images from "../assets/images/images";
 import Image from "next/image";
+import shelvingLocal from "../assets/images/shelving_1.jpg";
+import cabinentLocal from "../assets/images/shelving_2.jpg";
 
 const Services = () => {
   const {
@@ -93,20 +95,40 @@ const Services = () => {
         </h2>
         {selectedCard === "Carpentry" && (
           <>
-            <div className="w-full flex-col-reverse md:flex-row gap-4 flex justify-between items-center py-4">
-              <div className="flex w-full gap-2 justify-center md:pl-4 overflow-hidden">
-                <img
-                  alt={selectedCard}
-                  src={shelving}
-                  className="w-full h-[400px] rounded border-red-800 border-4"
-                />
-                <img
-                  alt={selectedCard}
-                  src={cabinet}
-                  className="hidden lg:block w-full h-[400px] rounded border-red-800 border-4"
-                />
+            <div className="w-full flex-col-reverse lg:flex-row gap-4 flex justify-between items-center py-4">
+              <div className="flex gap-2 justify-center md:pl-4 overflow-hidden">
+                {shelvingLocal ? (
+                  <Image
+                    className="w-full h-[400px] rounded border-red-800 border-4"
+                    src={shelvingLocal}
+                    alt="shelving"
+                    width={0}
+                    height={0}
+                  />
+                ) : (
+                  <img
+                    alt={selectedCard}
+                    src={shelving}
+                    className="w-full h-[400px] rounded border-red-800 border-4"
+                  />
+                )}
+                {cabinentLocal ? (
+                  <Image
+                    src={cabinentLocal}
+                    alt="cabinent"
+                    width={0}
+                    height={0}
+                    className="hidden lg:block w-full h-[400px] rounded border-red-800 border-4"
+                  />
+                ) : (
+                  <img
+                    alt={selectedCard}
+                    src={cabinet}
+                    className="hidden lg:block w-full h-[400px] rounded border-red-800 border-4"
+                  />
+                )}
               </div>
-              <div className="w-full text-center flex flex-col items-center justify-center">
+              <div className="w-full lg:w-[50%] text-center flex flex-col items-center justify-center">
                 <ul className="w-full text-3xl uppercase font-bold text-white">
                   <li>
                     <h2 className="w-full bg-red-800 py-2">FURNITURE</h2>
@@ -129,7 +151,6 @@ const Services = () => {
                   <li>
                     <h2 className="w-full bg-red-800 py-2">BENCHES</h2>
                   </li>
-                  h2
                   <li>
                     <h2 className="w-full text-red-800 py-2">FLOORING</h2>
                   </li>
