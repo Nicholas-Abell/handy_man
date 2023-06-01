@@ -1,20 +1,37 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Card from "../Card";
 import images from "@/app/assets/images/images";
 
 const CardHolder = () => {
+  const [useLocalImages, setUseLocalImages] = useState(true);
   const { patio, awning1, deck2, cabinet, parallax } = images;
   return (
     <div
       className="w-full relative border-black border-t-4 border-b-4 bg-black py-8 px-[20px] lg:px-4 flex flex-wrap items-center justify-center gap-4 lg:gap-12 lg:bg-fixed bg-center bg-no-repeat bg-cover"
-      style={{
-        backgroundImage: `url(${parallax})`,
-      }}
+      style={
+        useLocalImages
+          ? { backgroundImage: "url(/parallax.jpg)" }
+          : {
+              backgroundImage: `url(${parallax})`,
+            }
+      }
     >
-      <Card title={"PATIOS"} img={patio} />
-      <Card title={"AWNINGS"} img={awning1} />
-      <Card title={"DECKS"} img={deck2} />
-      <Card title={"CABINENTS"} img={cabinet} />
+      {useLocalImages ? (
+        <>
+          <Card title={"PATIOS"} img={"/patio.jpg"} />
+          <Card title={"AWNINGS"} img={"/awning.jpg"} />
+          <Card title={"DECKS"} img={"/deck_1.jpg"} />
+          <Card title={"CABINENTS"} img={"/shelving_1.jpg"} />
+        </>
+      ) : (
+        <>
+          <Card title={"PATIOS"} img={patio} />
+          <Card title={"AWNINGS"} img={awning1} />
+          <Card title={"DECKS"} img={deck2} />
+          <Card title={"CABINENTS"} img={cabinet} />
+        </>
+      )}
     </div>
   );
 };

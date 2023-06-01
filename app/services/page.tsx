@@ -4,14 +4,9 @@ import { GiWoodBeam, GiGreenhouse } from "react-icons/gi";
 import { BsLightbulb } from "react-icons/bs";
 import { AiOutlineFormatPainter } from "react-icons/ai";
 import images from "../assets/images/images";
-import Image from "next/image";
-import shelvingLocal from "../../public/shelving_1.jpg";
-import cabinentLocal from "../../public/shelving_2.jpg";
-import afterLocal from "../../public/after.jpg";
-import pathway1Local from "../../public/pathway_1.jpg";
-import pipeLocal from "../../public/pipe.jpg";
 
 const Services = () => {
+  const [useLocalImages, setUseLocalImages] = useState(true);
   const { cabinet, pathWay1, shelving, pipe, after } = images;
 
   const [selectedCard, setSelectedCard] = useState("Carpentry");
@@ -86,35 +81,33 @@ const Services = () => {
           <>
             <div className="w-full flex-col-reverse md:flex-row gap-4 flex justify-between items-center py-4">
               <div className="flex w-full md:w-[50%] gap-2 justify-center md:pl-4 overflow-hidden">
-                {shelvingLocal ? (
-                  <Image
-                    className="w-[50%] md:w-full h-[400px] rounded border-red-800 border-4"
-                    src={shelvingLocal}
-                    alt="shelving"
-                    width={0}
-                    height={0}
-                  />
+                {useLocalImages ? (
+                  <>
+                    <img
+                      className="w-[50%] md:w-full h-[400px] rounded border-red-800 border-4"
+                      src={"/shelving_1.jpg"}
+                      alt="shelving"
+                      onError={() => setUseLocalImages(false)}
+                    />
+                    <img
+                      src={"/shelving_2.jpg"}
+                      alt="cabinent"
+                      className="hidden lg:block w-full h-[400px] rounded border-red-800 border-4"
+                    />
+                  </>
                 ) : (
-                  <img
-                    alt={selectedCard}
-                    src={shelving}
-                    className="w-[50%] md:w-full h-[400px] rounded border-red-800 border-4"
-                  />
-                )}
-                {cabinentLocal ? (
-                  <Image
-                    src={cabinentLocal}
-                    alt="cabinent"
-                    width={0}
-                    height={0}
-                    className="hidden lg:block w-full h-[400px] rounded border-red-800 border-4"
-                  />
-                ) : (
-                  <img
-                    alt={selectedCard}
-                    src={cabinet}
-                    className="hidden lg:block w-full h-[400px] rounded border-red-800 border-4"
-                  />
+                  <>
+                    <img
+                      alt={selectedCard}
+                      src={shelving}
+                      className="w-[50%] md:w-full h-[400px] rounded border-red-800 border-4"
+                    />
+                    <img
+                      alt={selectedCard}
+                      src={cabinet}
+                      className="hidden lg:block w-full h-[400px] rounded border-red-800 border-4"
+                    />
+                  </>
                 )}
               </div>
               <div className="w-full lg:w-[50%] text-center flex flex-col items-center justify-center">
@@ -152,13 +145,12 @@ const Services = () => {
           <>
             <div className="w-full flex-col-reverse md:flex-row gap-4 flex justify-between items-center py-4">
               <div className="flex w-full md:w-[50%] gap-2 justify-center md:pl-4 overflow-hidden">
-                {afterLocal ? (
-                  <Image
-                    src={afterLocal}
+                {useLocalImages ? (
+                  <img
+                    src={"/after.jpg"}
                     alt="interior"
-                    width={0}
-                    height={0}
                     className="w-[50%] md:w-full h-[400px] rounded border-red-800 border-4"
+                    onError={() => setUseLocalImages(false)}
                   />
                 ) : (
                   <img
@@ -200,33 +192,33 @@ const Services = () => {
           <>
             <div className="w-full flex-col-reverse md:flex-row gap-4 flex justify-between items-center py-4">
               <div className="flex w-full gap-2 justify-center md:pl-4 overflow-hidden">
-                {pathway1Local ? (
-                  <Image
-                    src={pathway1Local}
-                    alt={selectedCard}
-                    className="w-[50%] md:w-full h-[400px] rounded border-red-800 border-4"
-                  />
+                {useLocalImages ? (
+                  <>
+                    <img
+                      src={"/pathway_1.jpg"}
+                      alt={selectedCard}
+                      className="w-[50%] md:w-full h-[400px] rounded border-red-800 border-4"
+                      onError={() => setUseLocalImages(false)}
+                    />
+                    <img
+                      src={"/pipe.jpg"}
+                      alt={selectedCard}
+                      className="hidden lg:block w-full h-[400px] rounded border-red-800 border-4"
+                    />
+                  </>
                 ) : (
-                  <img
-                    alt={selectedCard}
-                    src={pathWay1}
-                    className="w-[50%] md:w-full h-[400px] rounded border-red-800 border-4"
-                  />
-                )}
-                {pipeLocal ? (
-                  <Image
-                    src={pipeLocal}
-                    alt={selectedCard}
-                    width={0}
-                    height={0}
-                    className="hidden lg:block w-full h-[400px] rounded border-red-800 border-4"
-                  />
-                ) : (
-                  <img
-                    alt={selectedCard}
-                    src={pipe}
-                    className="hidden lg:block w-full h-[400px] rounded border-red-800 border-4"
-                  />
+                  <>
+                    <img
+                      alt={selectedCard}
+                      src={pathWay1}
+                      className="w-[50%] md:w-full h-[400px] rounded border-red-800 border-4"
+                    />
+                    <img
+                      alt={selectedCard}
+                      src={pipe}
+                      className="hidden lg:block w-full h-[400px] rounded border-red-800 border-4"
+                    />
+                  </>
                 )}
               </div>
               <div className="w-full text-center flex flex-col items-center justify-center">

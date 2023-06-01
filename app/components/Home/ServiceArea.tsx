@@ -1,7 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import logoLocal from "../../../public/logo.jpg";
-import Image from "next/image";
 import images from "@/app/assets/images/images";
 
 const ServiceArea: React.FC = () => {
@@ -32,11 +30,9 @@ const ServiceArea: React.FC = () => {
         </div>
         {useLocalImages ? (
           <div className="w-full flex justify-center items-center">
-            <Image
-              src={logoLocal}
+            <img
+              src={"/logo.jpg"}
               alt="logo"
-              width={0}
-              height={0}
               onError={() => setUseLocalImages(false)}
               className="w-auto h-[480px] rounded border-2 border-black"
             />

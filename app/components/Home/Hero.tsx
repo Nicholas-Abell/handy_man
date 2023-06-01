@@ -3,9 +3,9 @@ import React, { useEffect, useState } from "react";
 import images from "../../assets/images/images";
 import beforeLocal from "../../../public/before_greyscale.jpeg";
 import afterLocal from "../../../public/after.jpg";
-import Image from "next/image";
 
 const Hero = () => {
+  const [useLocalImages, setUseLocalImages] = useState(true);
   const { before, after } = images;
   const [fadeOut, setFadeOut] = useState(false);
 
@@ -16,26 +16,20 @@ const Hero = () => {
   return (
     <div
       className="w-full h-screen relative text-white lg:bg-fixed bg-center bg-no-repeat bg-cover"
-      style={{
-        backgroundImage: `url(${after})`,
-      }}
+      style={
+        useLocalImages
+          ? {
+              backgroundImage: `url(/after.jpg)`,
+            }
+          : { backgroundImage: `url(${after})` }
+      }
     >
-      {afterLocal && (
-        <Image
-          src={afterLocal}
-          width={0}
-          height={0}
-          alt="after"
-          className="top-0 left-0 w-full h-screen object-cover absolute z-10 ease-in opacity-100 duration-[3s]"
-        />
-      )}
-      {beforeLocal ? (
-        <Image
-          src={beforeLocal}
+      {useLocalImages ? (
+        <img
+          src={"/before_greyscale.jpeg"}
           alt="before"
-          width={0}
-          height={0}
           className="top-0 left-0 w-full h-screen object-cover absolute z-10 ease-in opacity-100 duration-[3s]"
+          onError={() => setUseLocalImages(false)}
           style={
             fadeOut
               ? { opacity: "0", transitionDelay: "1s" }
