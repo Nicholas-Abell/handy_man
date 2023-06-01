@@ -1,8 +1,12 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import logoLocal from "../../../public/logo.jpg";
 import Image from "next/image";
+import images from "@/app/assets/images/images";
 
 const ServiceArea: React.FC = () => {
+  const [useLocalImages, setUseLocalImages] = useState(true);
+  const { logo } = images;
   return (
     <div className="flex flex-col items-center justify-center py-24 w-full">
       <h2 className="text-4xl text-red-800 font-bold pb-4">Service Area</h2>
@@ -26,16 +30,23 @@ const ServiceArea: React.FC = () => {
             </li>
           </ul>
         </div>
-        {logoLocal && (
+        {useLocalImages ? (
           <div className="w-full flex justify-center items-center">
             <Image
               src={logoLocal}
               alt="logo"
               width={0}
               height={0}
+              onError={() => setUseLocalImages(false)}
               className="w-auto h-[480px] rounded border-2 border-black"
             />
           </div>
+        ) : (
+          <img
+            src={logo}
+            alt="logo"
+            className="w-auto h-[480px] rounded border-2 border-black"
+          />
         )}
       </div>
     </div>
