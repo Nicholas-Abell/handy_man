@@ -12,6 +12,7 @@ const railing = 'https://i.postimg.cc/cHCVLgkv/railing.jpg';
 const pipe = 'https://i.postimg.cc/wjD4qc6f/pipe.jpg';
 const machinery = 'https://i.postimg.cc/W300rSHC/machinery.jpg';
 const parallax = 'https://i.postimg.cc/XNBydLpQ/parallax.jpg';
+const logo = "https://i.postimg.cc/d0P7XLDq/logo.jpg";
 
 export default {
     before,
@@ -28,4 +29,5 @@ export default {
     awning2,
     after,
     parallax,
+    logo
 };
