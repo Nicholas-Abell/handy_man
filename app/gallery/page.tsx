@@ -28,9 +28,11 @@ const Gallery = () => {
         {useLocalImages ? (
           <>
             <img
+              onLoad={() => console.log("gallery test")}
               src={"/after.jpg"}
               alt="interior"
-              onError={() => setUseLocalImages(true)}
+              placeholder="blur"
+              onError={() => setUseLocalImages(false)}
               className="w-full h-auto object-cover rounded-lg border-4 border-black"
             />
             <img
