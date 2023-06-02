@@ -1,9 +1,9 @@
 const deck2 = 'https://i.postimg.cc/xdcw0N4c/deck-2.jpg';
 const cabinet = 'https://i.postimg.cc/tC4VCXpL/shelving-2.jpg';
-const awning1 = 'https://i.postimg.cc/d3dr26Ng/awning.jpg';//c
+const awning1 = 'https://i.postimg.cc/d3dr26Ng/awning.jpg';
 const awning2 = 'https://i.postimg.cc/02swgpB2/awning-2.jpg';
-const before = 'https://i.postimg.cc/BnwbvDMF/before-greyscale.jpg'; //c
-const after = 'https://i.postimg.cc/Y9kXLcyJ/after.jpg';//c
+const before = 'https://i.postimg.cc/BnwbvDMF/before-greyscale.jpg'; 
+const after = 'https://i.postimg.cc/Y9kXLcyJ/after.jpg';
 const pathWay1 = 'https://i.postimg.cc/HsVfgycR/pathway-1.jpg';
 const bench = 'https://i.postimg.cc/65Px20xB/bench.jpg';
 const patio = 'https://i.postimg.cc/XJszMjVn/patio.jpg';
