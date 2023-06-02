@@ -1,9 +1,11 @@
 "use client";
 import React, { useState } from "react";
+import Link from "next/link";
+
+//icons
 import { HiMenuAlt3 } from "react-icons/hi";
 import { BsTelephone } from "react-icons/bs";
 import { GoTools } from "react-icons/go";
-import Link from "next/link";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
