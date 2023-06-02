@@ -8,7 +8,7 @@ const CardHolder = () => {
   const { patio, awning1, deck2, cabinet, parallax } = images;
   return (
     <div
-      className="w-full relative border-black border-t-4 border-b-4 bg-black py-8 px-[20px] lg:px-4 flex flex-wrap items-center justify-center gap-4 lg:gap-12 lg:bg-fixed bg-center bg-no-repeat bg-cover"
+      className="w-full relative border-black border-t-4 border-b-4 bg-black py-24 lg:px-4 flex flex-wrap items-center justify-center gap-4 lg:gap-12 lg:bg-fixed bg-center bg-no-repeat bg-cover"
       style={
         useLocalImages
           ? { backgroundImage: "url(/parallax.jpg)" }
@@ -19,7 +19,11 @@ const CardHolder = () => {
     >
       {useLocalImages ? (
         <>
-          <Card title={"PATIOS"} img={"/patio.jpg"} />
+          <Card
+            title={"PATIOS"}
+            img={"/patio.jpg"}
+            setUseLocalImages={setUseLocalImages}
+          />
           <Card title={"AWNINGS"} img={"/awning.jpg"} />
           <Card title={"DECKS"} img={"/deck_1.jpg"} />
           <Card title={"CABINENTS"} img={"/shelving_1.jpg"} />

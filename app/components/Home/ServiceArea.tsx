@@ -1,10 +1,16 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import images from "@/app/assets/images/images";
 
 const ServiceArea: React.FC = () => {
   const [useLocalImages, setUseLocalImages] = useState(true);
+  const [loading, setLoading] = useState(true);
+
   const { logo } = images;
+
+  useEffect(() => {
+    setLoading(false);
+  }, [loading]);
 
   return (
     <div className="flex flex-col items-center justify-center py-24 w-full">
@@ -34,13 +40,21 @@ const ServiceArea: React.FC = () => {
           </ul>
         </div>
         {useLocalImages ? (
-          <div className="w-full flex justify-center items-center">
+          <div className="w-full relative flex justify-center items-center px-8">
             <img
               src={"/logo.jpg"}
               alt="logo"
               onError={() => setUseLocalImages(false)}
-              className="w-auto h-[480px] rounded border-2 border-black"
+              onLoad={() => setLoading(false)}
+              className={`${
+                loading ? "hidden" : "block"
+              } w-auto h-[480px] rounded border-2 border-black`}
             />
+            {loading && (
+              <div className="flex h-[480px] w-[380px] flex-col border border-black rounded shadow-md animate-pulse">
+                <div className="h-full w-full rounded-t dark:bg-gray-600"></div>
+              </div>
+            )}
           </div>
         ) : (
           <img
