@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 
-//icons
+//iconsgit a
 import { BsMailbox } from "react-icons/bs";
 import { HiDevicePhoneMobile } from "react-icons/hi2";
 
@@ -23,7 +23,11 @@ const Contact = () => {
           <h1 className="text-4xl text-red-800 font-bold whitespace-nowrap mb-4">
             Call or Text
           </h1>
-          <p className="text-2xl">812-525-1307</p>
+          <a href="tel:8125251307">
+            <p className="text-2xl cursor-pointer hover:text-green-400 font-bold">
+              812-525-1307
+            </p>
+          </a>
         </div>
         <div className="w-[5px] h-[240px] mx-8 bg-red-800 hidden md:block"></div>
         <div className="text-center flex flex-col items-center justify-center gap-4">
@@ -35,8 +39,8 @@ const Contact = () => {
             Email
           </h1>
           <p className="text-2xl">
-            {" "}
-            Down Below or at <br />
+            Down Below or at
+            <br />
             <em className="text-sm font-bold">
               smsconstructionandremodeling@gmail.com
             </em>

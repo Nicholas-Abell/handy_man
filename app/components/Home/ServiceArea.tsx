@@ -5,6 +5,7 @@ import images from "@/app/assets/images/images";
 const ServiceArea: React.FC = () => {
   const [useLocalImages, setUseLocalImages] = useState(true);
   const { logo } = images;
+  
   return (
     <div className="flex flex-col items-center justify-center py-24 w-full">
       <h2 className="text-4xl text-red-800 font-bold pb-4">Service Area</h2>
