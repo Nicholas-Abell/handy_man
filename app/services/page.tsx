@@ -19,12 +19,8 @@ const Services = () => {
     setLoading(true);
   };
 
-  const timedLoad = async () => {
-    await setTimeout(200, setLoading(false));
-  };
-
   useEffect(() => {
-    timedLoad;
+    setLoading(false);
   }, [loading]);
 
   return (
