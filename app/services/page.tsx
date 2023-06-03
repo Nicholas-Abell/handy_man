@@ -1,15 +1,27 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { GiWoodBeam, GiGreenhouse } from "react-icons/gi";
 import { BsLightbulb } from "react-icons/bs";
 import { AiOutlineFormatPainter } from "react-icons/ai";
 import images from "../assets/images/images";
+import LoadingSkeleton from "../components/Gallery/LoadingSkeleton";
+import { setTimeout } from "timers/promises";
 
 const Services = () => {
   const [useLocalImages, setUseLocalImages] = useState(true);
+  const [loading, setLoading] = useState(true);
+  const [selectedCard, setSelectedCard] = useState("Carpentry");
+
   const { cabinet, pathWay1, shelving, pipe, after } = images;
 
-  const [selectedCard, setSelectedCard] = useState("Carpentry");
+  const HandleCardClick = (args: string) => {
+    setSelectedCard(args);
+    setLoading(true);
+  };
+
+  useEffect(() => {
+    setLoading(false);
+  }, [loading]);
 
   return (
     <div className="bg-red-800 w-full">
@@ -18,7 +30,7 @@ const Services = () => {
       </div>
       <div className="bg-red-800 w-full pb-2 flex justify-center items-center gap-8 flex-wrap">
         <div
-          onClick={() => setSelectedCard("Carpentry")}
+          onClick={() => HandleCardClick("Carpentry")}
           className={`w-[200px] h-[200px] rounded-lg flex flex-col items-center justify-center p-4 gap-4 cursor-pointer hover:bg-gray-300 
           ${selectedCard === "Carpentry" ? "bg-gray-300" : "bg-white"}`}
         >
@@ -31,7 +43,7 @@ const Services = () => {
           </div>
         </div>
         <div
-          onClick={() => setSelectedCard("Interior")}
+          onClick={() => HandleCardClick("Interior")}
           className={`w-[200px] h-[200px] rounded-lg flex flex-col items-center justify-center gap-4 cursor-pointer hover:bg-gray-300  ${
             selectedCard === "Interior" ? "bg-gray-300" : "bg-white"
           }`}
@@ -45,7 +57,7 @@ const Services = () => {
           </div>
         </div>
         <div
-          onClick={() => setSelectedCard("Exterior")}
+          onClick={() => HandleCardClick("Exterior")}
           className={`w-[200px] h-[200px] rounded-lg flex flex-col items-center justify-center pt-8 cursor-pointer hover:bg-gray-300  ${
             selectedCard === "Exterior" ? "bg-gray-300" : "bg-white"
           }`}
@@ -83,29 +95,56 @@ const Services = () => {
               <div className="flex w-full md:w-[50%] gap-2 justify-center md:pl-4 overflow-hidden">
                 {useLocalImages ? (
                   <>
+                    {loading && (
+                      <>
+                        <LoadingSkeleton />
+                        <LoadingSkeleton hideOnMobile />
+                      </>
+                    )}
                     <img
-                      className="w-[50%] md:w-full h-[400px] rounded border-red-800 border-4"
+                      className={`${
+                        loading ? "hidden" : "block"
+                      } w-[50%] md:w-full h-[400px] rounded border-red-800 border-4`}
                       src={"/shelving_1.jpg"}
                       alt="shelving"
                       onError={() => setUseLocalImages(false)}
+                      onLoad={() => setLoading(false)}
                     />
                     <img
                       src={"/shelving_2.jpg"}
                       alt="cabinent"
-                      className="hidden lg:block w-full h-[400px] rounded border-red-800 border-4"
+                      onError={() => setUseLocalImages(false)}
+                      onLoad={() => setLoading(false)}
+                      className={`${
+                        loading ? "lg:hidden" : "lg:block"
+                      } hidden lg:block w-full h-[400px] rounded border-red-800 border-4`}
                     />
                   </>
                 ) : (
                   <>
+                    {loading && (
+                      <>
+                        <LoadingSkeleton />
+                        <LoadingSkeleton hideOnMobile />
+                      </>
+                    )}
                     <img
                       alt={selectedCard}
                       src={shelving}
-                      className="w-[50%] md:w-full h-[400px] rounded border-red-800 border-4"
+                      onError={() => setUseLocalImages(false)}
+                      onLoad={() => setLoading(false)}
+                      className={`${
+                        loading ? "hidden" : "block"
+                      } w-[50%] md:w-full h-[400px] rounded border-red-800 border-4`}
                     />
                     <img
                       alt={selectedCard}
                       src={cabinet}
-                      className="hidden lg:block w-full h-[400px] rounded border-red-800 border-4"
+                      onError={() => setUseLocalImages(false)}
+                      onLoad={() => setLoading(false)}
+                      className={`${
+                        loading ? "lg:hidden" : "lg:block"
+                      } hidden lg:block w-full h-[400px] rounded border-red-800 border-4`}
                     />
                   </>
                 )}
@@ -146,18 +185,35 @@ const Services = () => {
             <div className="w-full flex-col-reverse md:flex-row gap-4 flex justify-between items-center py-4">
               <div className="flex w-full md:w-[50%] gap-2 justify-center md:pl-4 overflow-hidden">
                 {useLocalImages ? (
-                  <img
-                    src={"/after.jpg"}
-                    alt="interior"
-                    className="w-[50%] md:w-full h-[400px] rounded border-red-800 border-4"
-                    onError={() => setUseLocalImages(false)}
-                  />
+                  <>
+                    {loading && <LoadingSkeleton />}
+                    <img
+                      src={"/after.jpg"}
+                      alt="interior"
+                      className={`${
+                        loading ? "hidden" : "block"
+                      } w-[50%] md:w-full h-[400px] rounded border-red-800 border-4`}
+                      onError={() => setUseLocalImages(false)}
+                      onLoad={() => setLoading(false)}
+                    />
+                  </>
                 ) : (
-                  <img
-                    alt={selectedCard}
-                    src={after}
-                    className="w-[50%] md:w-full h-[400px] rounded border-red-800 border-4"
-                  />
+                  <>
+                    {loading && (
+                      <>
+                        <LoadingSkeleton />
+                      </>
+                    )}
+                    <img
+                      alt={selectedCard}
+                      src={after}
+                      className={`${
+                        loading ? "hidden" : "block"
+                      } w-[50%] md:w-full h-[400px] rounded border-red-800 border-4`}
+                      onError={() => setUseLocalImages(false)}
+                      onLoad={() => setLoading(false)}
+                    />
+                  </>
                 )}
               </div>
               <div className="w-full text-center flex flex-col items-center justify-center">
@@ -194,6 +250,12 @@ const Services = () => {
               <div className="flex w-full gap-2 justify-center md:pl-4 overflow-hidden">
                 {useLocalImages ? (
                   <>
+                    {loading && (
+                      <>
+                        <LoadingSkeleton />
+                        <LoadingSkeleton hideOnMobile />
+                      </>
+                    )}
                     <img
                       src={"/pathway_1.jpg"}
                       alt={selectedCard}

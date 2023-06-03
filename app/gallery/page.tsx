@@ -1,9 +1,58 @@
 "use client";
 import React, { useState } from "react";
 import images from "../assets/images/images.js";
+import ImageCard from "../components/Gallery/ImageCard";
 
 const Gallery = () => {
   const [useLocalImages, setUseLocalImages] = useState(true);
+
+  const localImages = [
+    {
+      src: "/after.jpg",
+      alt: "interior",
+    },
+    {
+      src: "/bench.jpg",
+      alt: "bench",
+    },
+    {
+      src: "pathway_1.jpg",
+      alt: "pathway_1",
+    },
+    {
+      src: "/patio.jpg",
+      alt: "patio",
+    },
+    {
+      src: "/shelving_1.jpg",
+      alt: "shelving",
+    },
+    {
+      src: "/railing.jpg",
+      alt: "/railing",
+    },
+    {
+      src: "/shelving_2.jpg",
+      alt: "/shelving_2",
+    },
+    {
+      src: "/pipe.jpg",
+      alt: "pipe",
+    },
+    {
+      src: "/deck_2.jpg",
+      alt: "deck_2",
+    },
+    {
+      src: "/awning_2.jpg",
+      alt: "/awning_2",
+    },
+    {
+      src: "/awning.jpg",
+      alt: "/awning",
+    },
+  ];
+
   const {
     deck2,
     cabinet,
@@ -27,69 +76,9 @@ const Gallery = () => {
       <div className="w-full grid grid-cols-2 lg:grid-cols-3 gap-4 p-4">
         {useLocalImages ? (
           <>
-            <img
-              onLoad={() => console.log("gallery test")}
-              src={"/after.jpg"}
-              alt="interior"
-              placeholder="blur"
-              onError={() => setUseLocalImages(false)}
-              className="w-full h-auto object-cover rounded-lg border-4 border-black"
-            />
-            <img
-              src={"/bench.jpg"}
-              alt="bench"
-              className="w-full h-auto object-cover rounded-lg border-4 border-black"
-            />
-            <img
-              src={"pathway_1.jpg"}
-              alt="pathway"
-              className="w-full h-auto object-cover rounded-lg border-4 border-black"
-            />
-            <img
-              src={"/patio.jpg"}
-              alt="patio"
-              className="w-full h-auto object-cover rounded-lg border-4 border-black"
-            />
-            <img
-              src={"/shelving_1.jpg"}
-              alt="shelving"
-              className="w-full h-auto object-cover rounded-lg border-4 border-black"
-            />
-            <img
-              src={"/railing.jpg"}
-              alt="railing"
-              className="w-full h-auto object-cover rounded-lg border-4 border-black"
-            />
-            <img
-              src={"/shelving_2.jpg"}
-              alt="cabinent"
-              className="w-full h-auto object-cover rounded-lg border-4 border-black"
-            />
-            <img
-              src={"/machinery.jpg"}
-              alt="machinery"
-              className="w-full h-auto object-cover rounded-lg border-4 border-black"
-            />
-            <img
-              src={"/pipe.jpg"}
-              alt="pipe"
-              className="w-full h-auto object-cover rounded-lg border-4 border-black"
-            />
-            <img
-              src={"/deck_2.jpg"}
-              alt="deck 2"
-              className="w-full h-auto object-cover rounded-lg row-span-1 col-span-1 border-4 border-black"
-            />
-            <img
-              src={"/awning_2.jpg"}
-              alt="awning 2"
-              className="w-full h-auto object-cover rounded-lg row-span-1 col-span-1 border-4 border-black"
-            />
-            <img
-              src={"/awning.jpg"}
-              alt="awning"
-              className="w-full h-auto object-cover rounded-lg row-span-1 col-span-1 border-4 border-black"
-            />
+            {localImages.map((image) => (
+                <ImageCard src={image.src} alt={image.src} />
+            ))}
           </>
         ) : (
           <>
