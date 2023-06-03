@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import images from "../../assets/images/images";
+import Link from "next/link";
 
 const Hero = () => {
   const [useLocalImages, setUseLocalImages] = useState(true);
@@ -51,11 +52,11 @@ const Hero = () => {
         <h1 className="text-white text-3xl md:text-5xl lg:text-6xl xl:text-7xl">
           SMS Handyman <br /> Construction & Remodeling
         </h1>
-        <a href="/contact">
+        <Link href="/contact">
           <button className="text-white bg-red-800 border-black hover:bg-gray-400 hover:shadow-xl ease-in duration-300 max-w-[200px]">
             Contact us Today
           </button>
-        </a>
+        </Link>
       </div>
     </div>
   );
