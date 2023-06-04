@@ -28,7 +28,7 @@ const Services = () => {
       <div className="w-full h-[40vh] flex justify-center items-center text-white">
         <h1 className="text-5xl lg:text-8xl underline">Our Services</h1>
       </div>
-      <div className="bg-red-800 w-full pb-2 flex justify-center items-center gap-8 flex-wrap">
+      <div className="w-full md:pb-8 flex flex-col fixed left-0 top-2 md:relative md:flex-row justify-center md:items-center gap-1 md:gap-8 flex-wrap">
         <div
           onClick={() => HandleCardClick("Carpentry")}
           className={`w-[200px] h-[200px] rounded-lg flex flex-col items-center justify-center p-4 gap-4 cursor-pointer hover:bg-gray-300 
@@ -36,7 +36,7 @@ const Services = () => {
         >
           <div className="flex flex-col items-center justify-center">
             <GiWoodBeam
-              size={80}
+              size={70}
               className="text-white bg-red-800 rounded-full p-2 border-black border-4"
             />
             <h2 className="text-3xl font-bold">Carpentry</h2>
@@ -50,7 +50,7 @@ const Services = () => {
         >
           <div className="flex flex-col items-center justify-center">
             <AiOutlineFormatPainter
-              size={80}
+              size={70}
               className="text-white bg-red-800 rounded-full p-2 border-black border-4"
             />
             <h2 className="text-3xl font-bold">Interior</h2>
@@ -64,7 +64,7 @@ const Services = () => {
         >
           <div className="flex flex-col items-center justify-center">
             <GiGreenhouse
-              size={80}
+              size={70}
               className="text-white bg-red-800 rounded-full p-2 border-black border-4"
             />
             <h2 className="text-3xl font-bold">Exterior</h2>
@@ -78,14 +78,14 @@ const Services = () => {
         >
           <div className="flex flex-col items-center justify-center">
             <BsLightbulb
-              size={80}
+              size={70}
               className="text-white bg-red-800 rounded-full p-2 border-black border-4"
             />
             <h2 className="text-3xl font-bold">Appliances</h2>
           </div>
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center bg-white">
+      <div className="flex flex-col justify-center items-center bg-white pl-8 md:p-0">
         <h2 className="text-5xl lg:text-8xl font-extrabold py-8 w-full text-center text-red-800">
           {selectedCard}
         </h2>
@@ -254,6 +254,7 @@ const Services = () => {
                       <>
                         <LoadingSkeleton />
                         <LoadingSkeleton hideOnMobile />
+                        git bracnh
                       </>
                     )}
                     <img
